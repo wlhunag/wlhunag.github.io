@@ -1,0 +1,293 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+body
+{
+    font-family:  "微軟正黑體", "Microsoft JhengHei", "Arial",'Lato', 'sans-serif';
+}
+/*.main { padding-top: 70px; }*/
+.profile
+{
+    min-height: 355px;
+    display: inline-table;
+}
+figcaption.ratings
+{
+    margin-top:20px;
+}
+figcaption.ratings a
+{
+    color:#f1c40f;
+    font-size:11px;
+}
+figcaption.ratings a:hover
+{
+    color:#f39c12;
+    text-decoration:none;
+}
+.divider
+{
+    border-top:1px solid rgba(0,0,0,0.1);
+}
+.emphasis
+{
+    border-top: 4px solid transparent;
+}
+.emphasis:hover
+{
+    border-top: 4px solid #1abc9c;
+}
+.emphasis h2
+{
+    margin-bottom:0;
+}
+span.tags
+{
+    background: #1abc9c;
+    border-radius: 2px;
+    color: #f5f5f5;
+    line-height: 1.8;
+    font-weight: bold;
+    padding: 2px 4px;
+}
+.dropdown-menu
+{
+    background-color: #34495e;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 250px;
+    margin-left: -125px;
+    left: 50%;
+}
+.dropdown-menu .divider
+{
+    background:none;
+}
+.dropdown-menu>li>a
+{
+    color:#f5f5f5;
+}
+.dropup .dropdown-menu
+{
+    margin-bottom:10px;
+}
+.dropup .dropdown-menu:before
+{
+    content: "";
+    border-top: 10px solid #34495e;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 10;
+}
+
+
+.animate-repeat {
+    line-height:40px;
+    list-style:none;
+    box-sizing:border-box;
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+    opacity:0;
+    max-height:0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+    opacity:1;
+    max-height:40px;
+}
+
+
+.animate-edu.ng-move,
+.animate-edu.ng-enter,
+.animate-edu.ng-leave {
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
+}
+
+.animate-edu.ng-leave.ng-leave-active,
+.animate-edu.ng-move,
+.animate-edu.ng-enter {
+    opacity:0;
+    max-height:0;
+}
+
+.animate-edu.ng-leave,
+.animate-edu.ng-move.ng-move-active,
+.animate-edu.ng-enter.ng-enter-active {
+    opacity:1;
+    max-height:40px;
+}
+
+#new-job{
+    padding: 10px;
+}
+
+.ng-hide-add {
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+    opacity: 1;
+}
+.ng-hide-add.ng-hide-add-active {
+    opacity: 0;
+}
+
+.ng-hide-remove {
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+    opacity: 0;
+}
+.ng-hide-remove.ng-hide-remove-active {
+    opacity: 1;
+}
+
+.footer a{
+    color: white;
+}
+
+.portfolio-item {
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    /*width: 290px;*/
+}
+
+.portfolio-item:hover {
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item .portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item .portfolio-thumb img {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    width: 100%;
+    height:auto;
+    border:#ccc 1px solid;
+}
+
+.portfolio-item .portfolio-thumb .portfolio-zoom
+{
+    width: 100%;
+    height: 45px;
+    /*text-align: center;*/
+    font-weight: 200;
+    display: none;
+    /*line-height: 45px;*/
+    position: absolute;
+    top: 17%;
+    margin-top: 0px;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    border-radius: 3px;
+}
+
+.portfolio-item .portfolio-thumb .portfolio-zoom {
+    margin-left:-100%;
+    width:85%;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+
+.portfolio-item:hover .portfolio-thumb .portfolio-zoom {
+    display: block;
+    margin-left:7%;
+    /*margin-left: -48px;*/
+}
+
+
+
+
+.portfolio-item:hover .portfolio-thumb img {
+    transform: scale(1.1);
+}
+
+.portfolio-item .portfolio-thumb .image-overlay {
+    background-color: #3CA2E0; /* thumb hover color */
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio-item:hover .portfolio-thumb .image-overlay {
+    opacity: 0.90;
+    filter: alpha(opacity=90);
+}
+.portfolio-item .portfolio-thumb , .portfolio-item .portfolio-thumb .active {
+    /*background-color: rgba(155, 155, 155,0.1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);*/
+    color: #3CA2E0;
+}
+
+.table-hover > tbody > tr > td.active:hover,
+.table-hover > tbody > tr > th.active:hover,
+.table-hover > tbody > tr.active:hover > td,
+.table-hover > tbody > tr:hover > .active,
+.table-hover > tbody > tr.active:hover > th {
+    background-color: #e8e8e8;
+}
+
+.comment {
+    margin: 7px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background: #F6F7F8;
+    min-height: 50px;
+}
+.pic {
+    padding-right: 10px;
+    float: left;
+}
+#textWrap {
+    margin-top: 10px;
+    width: 80%;
+    height: auto;
+    min-height: 71px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 5px;
+    display: block;
+    background: #FFF;
+    border: 1px solid #BDC7D8;
+    -webkit-box-sizing: border-box;
+    cursor: text;
+}
+
+#setimg  img{
+    max-width:100%;
+    width: 100%;
+}

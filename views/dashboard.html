@@ -1,0 +1,112 @@
+<div class=container-fluid>
+  <div class=row clearfix>
+    <div class="col-md-2 col-sm-3 sidebar">
+      <div class=text-center>
+        <h2> 工作教育網
+          <small><br/>自立支援</small>
+        </h2>
+        <!--以下是側欄-->
+
+        <a ui-sref="profile">
+          <img ng-src="{{ authData.picture || 'images/flat-avatar.png'}}"
+               class=user-avatar>
+        </a>
+
+        <!--<br> <a ui-sref=login class="btn btn-white btn-outline btn-rounded btn-sm">Logout</a>-->
+        <br>
+      <div ng-show="!authData.uid" class="text-danger">訪客模式功能受限</div>
+        <a ng-if="authData.uid" ng-click="logout()"
+                class="btn btn-white btn-outline btn-rounded">登出</a>
+        <a ng-if="!authData.uid" ng-click="login()" ui-sref=login
+           class="btn btn-white btn-outline btn-rounded">登入</a>
+
+      </div>
+      <ul class="nav nav-sidebar">
+        <li ng-class="{active: $state.includes('job')}"><a ui-sref=job>工作 <span class="glyphicon glyphicon-briefcase pull-right"></span><span
+            class=sr-only>(current)</span></a></li>
+
+        <li ng-class="{active: $state.includes('education')}"><a ui-sref=education>教育<i class="fa fa-graduation-cap pull-right"></i></a></li>
+        <li ng-class="{active: $state.includes('business')}"><a ui-sref=business>創業<i class="fa fa-comments pull-right"></i></a></li>
+        <hr/>
+        <!--<li><a href=https://www.facebook.com/groups/291785364347235 target="_blank">自立支援社團<i class="pull-right fa fa-facebook-official"></i></a></li>-->
+        <li ng-class="{active: $state.includes('profile')}" style="padding-top: 20px;"><a ui-sref=profile>個人檔案<span class="glyphicon glyphicon-user pull-right"></span></a></li>
+        <li class="footer" ><a href="https://github.com/wlhunag/self-reliance/blob/gh-pages/README.md" target="_blank">關於本網站<i class="fa fa-cog fa-spin pull-right"></i></a></li>
+      </ul>
+
+    </div>
+
+    <!--以下是頂端列-->
+    <nav role="navigation"
+         class="navbar navbar-inverse navbar-static-top   col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 ">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="nav navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand btn  btn-outline" ui-sref=job><span
+              class="glyphicon glyphicon-home"></span>
+            工作教育網</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li ng-class="{active: $state.includes('job')}"><a ui-sref=job>工作 <span class="glyphicon glyphicon-lock pull-right"></span><span
+                class=sr-only>(current)</span></a></li>
+            <li ng-class="{active: $state.includes('education')}"><a ui-sref=education>教育 <i class="fa fa-university pull-right"></i></a>
+            </li>
+            <li ng-class="{active: $state.includes('business')}"><a ui-sref=business><i class="fa fa-comments pull-right"></i>創業</a></li>
+            <li class="divider"></li>
+            <!--<li><a href=https://www.facebook.com/groups/291785364347235 target="_blank"><i class="pull-right fa fa-facebook-official"></i>-->
+              <!--自立支援社團</a></li>-->
+            <li><a ui-sref=profile class="text-right"><span class="glyphicon glyphicon-user pull-right"></span>個人檔案&nbsp;&nbsp;</a></li>
+            <li class="footer"><a class="text-right" href="https://github.com/wlhunag/self-reliance/blob/gh-pages/README.md" target="_blank">關於本網站&nbsp;&nbsp;<i class="fa fa-cog fa-spin pull-right"></i></a></li>
+            <li class="divider"></li>
+            <li><a ng-click="logout()" ui-sref=login class="btn btn-white btn-outline btn-rounded btn-lg">登出</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+
+    </nav>
+
+    <script>
+      $(document).ready(function () {
+        //Handles menu drop down
+        $('.dropdown-menu').find('form').click(function (e) {
+          e.stopPropagation();
+        });
+      });
+      $('.nav a').on('click', function () {
+        $(".navbar-toggle").click() //bootstrap 3.x by Richard
+      });
+
+    </script>
+
+    <script type="text/javascript">
+      window.doorbellOptions = {
+        appKey: 'yzd9YwvFpZzBqWKowhrqaK6LApa7rZeekaBBPBNxYvgvNbFzuOZfdMgeNtCoK7H6'
+      };
+      (function (d, t) {
+        var g = d.createElement(t);
+        g.id = 'doorbellScript';
+        g.type = 'text/javascript';
+        g.async = true;
+        g.src = 'https://embed.doorbell.io/button/1466?t=' + (new Date().getTime());
+        (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(g);
+      }(document, 'script'));
+    </script>
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ui-view="">
+
+    </div>
+
+  </div>
+</div>

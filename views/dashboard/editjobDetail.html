@@ -1,0 +1,134 @@
+<form id="new-job" name="entryform" novalidate="" ng-class="{'needfix':needfix}" class="ng-pristine ng-invalid ng-invalid-required">
+    <h3><i class="glyphicon glyphicon-edit green"></i> 編輯職缺</h3>
+    <a  ng-click="submit()"   class="btn btn-success btn-lg btn-outline btn-rounded pull-right">
+        <span class="glyphicon glyphicon-user"></span>儲存</a>
+    <div class="small">刊登的職缺盡量是適合教會成員的理想職缺</div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>職缺 / 頭銜</h4>
+        </div>
+        <div class="col-sm-10">
+            <input name="title" type="text" ng-model="entry.title" placeholder="例如，執行副理、保險業務助理、資深任體工程師等等" required class="form-control">
+        </div>
+    </div>
+    <div class="row taller">
+        <div class="col-sm-2 ">
+            <h4>月薪範圍</h4>
+        </div>
+        <div class="col-sm-10 form-inline">
+            <div class="form-group">
+                <input name="salary1" type="number" ng-model="entry.salary1" placeholder="最低值" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-number ng-valid-maxlength">
+            </div> 至
+            <div class="form-group">
+                <input name="salary2" type="number" ng-model="entry.salary2" placeholder="最高值，如：990000" class="form-control">
+            </div><span style="white-space:nowrap">  (單位: 新台幣)</span>
+        </div>
+    </div>
+    <div class="row taller">
+        <div class="col-sm-2 ">
+            <h4>額外獎金</h4>
+        </div>
+        <div class="col-sm-10 form-inline bonus">
+            <div style="margin-top: 6px" class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="signbonus" ng-model="entry.signbonus" class="ng-pristine ng-valid"><i class="glyphicon glyphicon-usd blue"></i> 簽約金
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="techshare" ng-model="entry.techshare" class="ng-pristine ng-valid"><i class="glyphicon glyphicon-folder-close orange"></i> 技術股
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="stockright" ng-model="entry.stockright" class="ng-pristine ng-valid"><i class="glyphicon glyphicon-heart red"></i> 員工認股
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="annualbonus" ng-model="entry.annualbonus" class="ng-pristine ng-valid"><i class="glyphicon glyphicon-gift green"></i> 三個月以上年終獎金
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>工作地點</h4>
+        </div>
+        <div class="col-sm-10">
+            <input name="location" type="text" ng-model="entry.location" placeholder="例如：台北市、上海" required="" ng-maxlength="30" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>工作內容</h4>
+        </div>
+        <div class="col-sm-10">
+            <textarea name="desc" ng-model="entry.desc" placeholder="請詳加描述你提供的職缺其工作內容(純文字排版)" style="min-height: 200px" class="form-control ng-pristine ng-valid"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>條件要求</h4>
+        </div>
+        <div class="col-sm-10">
+            <textarea name="desc" ng-model="entry.requirement" placeholder="請詳加描述你提供的職缺其工作要求(純文字排版)" style="min-height: 200px" class="form-control ng-pristine ng-valid"></textarea>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>公司名稱</h4>
+        </div>
+        <div class="col-sm-10">
+            <input name="company" type="text" ng-model="entry.company" placeholder="例如：滿地富股份有限公司" required="" ng-maxlength="30" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>公司介紹</h4>
+        </div>
+        <div class="col-sm-10">
+            <textarea name="compdesc" ng-model="entry.compdesc" placeholder="請簡單描述職缺所在的公司(純文字排版)" style="min-height: 100px" class="form-control ng-pristine ng-valid"></textarea>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>公司網址</h4>
+        </div>
+        <div class="col-sm-10">
+            <input name="url" type="text" ng-model="entry.url" placeholder="例如：http://runsoslow.io" class="form-control ng-pristine ng-valid">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>聯絡人</h4>
+        </div>
+        <div class="col-sm-10">
+            <input name="contact" type="text" ng-model="entry.contact" placeholder="例如: 人資部門 劉經理" required="" ng-maxlength="30" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>電子郵件</h4>
+        </div>
+        <div class="col-sm-10">
+            <input name="email" type="email" ng-model="entry.email" placeholder="例如: hr@runsoslow.io" required="" ng-maxlength="30" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+            <div class="small">( 收履歷用 )</div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-2">
+            <div ng-show="needfix" class="alert alert-warning ng-hide">表單有些問題，請修正再送出</div>
+        </div>
+        <div class="col-sm-10">
+            <div  ng-click="submit()"   class="btn btn-success btn-lg btn-block">
+                <span class="glyphicon glyphicon-user"></span>儲存</div>
+            <!--<div ng-show="!user" ng-click="login()" class="btn btn-warning btn-rad btn-block btn-lg">按此登入後即可刊登</div>-->
+        </div>
+    </div>
+</form>

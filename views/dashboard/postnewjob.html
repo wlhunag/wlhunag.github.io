@@ -1,0 +1,148 @@
+<form id="new-job" name="newjobform" novalidate="" ng-class="{'needfix':needfix}" class="ng-pristine ng-invalid ng-invalid-required">
+    <h3><i class="glyphicon glyphicon-edit green"></i> 建立職缺</h3>
+    <div class="small">刊登的職缺盡量是適合教會成員的理想職缺</div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>職缺 / 頭銜</h4>
+        </div>
+        <div class="col-sm-10">
+            <input name="title" type="text" ng-model="newjob.title" placeholder="例如，執行副理、保險業務助理、資深任體工程師等等" required class="form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>職業別</h4>
+        </div>
+        <div class="col-sm-10">
+            <select name="jobtype" ng-model="newjob.jobtype" ng-options="type.name for type in jobtypes" required="" class="form-control ng-pristine ng-invalid ng-invalid-required"><option value="" class="">請選取</option><option value="0">農林漁牧職類</option><option value="1">採礦冶金職類</option><option value="2">軍公教職類</option><option value="3">經營管理職類</option><option value="4">專業人員職類</option><option value="5">人事法務職類</option><option value="6">醫療護理職類</option><option value="7">財會金融職類</option><option value="8">業務銷售職類</option><option value="9">行政秘書職類</option><option value="10">技術服務職類</option><option value="11">電腦資訊職類</option><option value="12">生產製造職類</option><option value="13">機械操作職類</option><option value="14">營建職類</option><option value="15">娛樂演藝職類</option><option value="16">傳播媒體職類</option><option value="17">交通服務職類</option><option value="18">餐飲旅遊職類</option><option value="19">保全警衛職類</option><option value="20">家事服務職類</option><option value="21">環境保護職類</option><option value="22">非技術服務職類</option></select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>職業名</h4>
+        </div>
+        <div class="col-sm-10">
+            <select name="jobname" ng-model="newjob.jobname" ng-options="job.name for job in jobs" required="" class="form-control ng-pristine ng-invalid ng-invalid-required"><option value="" class="">請選取</option></select>
+        </div>
+    </div>
+    <div class="row taller">
+        <div class="col-sm-2 ">
+            <h4>月薪範圍</h4>
+        </div>
+        <div class="col-sm-10 form-inline">
+            <div class="form-group">
+                <input name="salary1" type="number" ng-model="newjob.salary1" placeholder="最低值" required="" class="form-control">
+            </div> 至
+            <div class="form-group">
+                <input name="salary2" type="number" ng-model="newjob.salary2" placeholder="最高值，如：990000" required="" class="form-control">
+            </div><span style="white-space:nowrap">  (單位: 新台幣)</span>
+        </div>
+    </div>
+    <div class="row taller">
+        <div class="col-sm-2 ">
+            <h4>額外獎金</h4>
+        </div>
+        <div class="col-sm-10 form-inline bonus">
+            <div style="margin-top: 6px" class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="signbonus" ng-model="newjob.signbonus" class="ng-pristine ng-valid"><i class="glyphicon glyphicon-usd blue"></i> 簽約金
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="techshare" ng-model="newjob.techshare" class="ng-pristine ng-valid"><i class="glyphicon glyphicon-folder-close orange"></i> 技術股
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="stockright" ng-model="newjob.stockright" class="ng-pristine ng-valid"><i class="glyphicon glyphicon-heart red"></i> 員工認股
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="annualbonus" ng-model="newjob.annualbonus" class="ng-pristine ng-valid"><i class="glyphicon glyphicon-gift green"></i> 三個月以上年終獎金
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>工作地點</h4>
+        </div>
+        <div class="col-sm-10">
+            <input name="location" type="text" ng-model="newjob.location" placeholder="例如：台北市、上海" required="" ng-maxlength="30" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>工作內容</h4>
+        </div>
+        <div class="col-sm-10">
+            <textarea name="desc" ng-model="newjob.desc" placeholder="請詳加描述你提供的職缺其工作內容(純文字排版)" style="min-height: 200px" class="form-control ng-pristine ng-valid"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>條件要求</h4>
+        </div>
+        <div class="col-sm-10">
+            <textarea name="desc" ng-model="newjob.requirement" placeholder="請詳加描述你提供的職缺其工作要求(純文字排版)" style="min-height: 200px" class="form-control ng-pristine ng-valid"></textarea>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>公司名稱</h4>
+        </div>
+        <div class="col-sm-10">
+            <input name="company" type="text" ng-model="newjob.company" placeholder="例如：滿地富股份有限公司" required="" ng-maxlength="30" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>公司介紹</h4>
+        </div>
+        <div class="col-sm-10">
+            <textarea name="compdesc" ng-model="newjob.compdesc" placeholder="請簡單描述職缺所在的公司(純文字排版)" style="min-height: 100px" class="form-control ng-pristine ng-valid"></textarea>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>公司網址</h4>
+        </div>
+        <div class="col-sm-10">
+            <input name="url" type="text" ng-model="newjob.url" placeholder="例如：http://runsoslow.io" class="form-control ng-pristine ng-valid">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>聯絡人</h4>
+        </div>
+        <div class="col-sm-10">
+            <input name="contact" type="text" ng-model="newjob.contact" placeholder="例如: 人資部門 劉經理" required="" ng-maxlength="30" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <h4>電子郵件</h4>
+        </div>
+        <div class="col-sm-10">
+            <input name="email" type="email" ng-model="newjob.email" placeholder="例如: hr@runsoslow.io" required="" ng-maxlength="30" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+            <div class="small">( 收履歷用 )</div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-2">
+            <div ng-show="needfix" class="alert alert-warning ng-hide">表單有些問題，請修正再送出</div>
+        </div>
+        <div class="col-sm-10">
+            <div  ng-click="submit()"   class="btn btn-success btn-lg btn-block">
+                <span class="glyphicon glyphicon-user"></span>刊登求才啟示</div>
+            <!--<div ng-show="!user" ng-click="login()" class="btn btn-warning btn-rad btn-block btn-lg">按此登入後即可刊登</div>-->
+        </div>
+    </div>
+</form>

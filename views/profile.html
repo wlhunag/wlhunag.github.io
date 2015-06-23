@@ -1,0 +1,38 @@
+<div><a ui-sref=editprofile class="pull-right btn btn-primary btn-outline btn-rounded">編輯檔案</a>
+
+  <div class="row">
+    <h2>個人檔案</h2>
+
+    <div class='container col-sm-12' ng-hide="user.job"  ui-sref=editprofile><h1 class=" btn btn-block btn-lg btn-primary btn-outline btn-rounded text-center">還沒有自我介紹，趕快來寫吧<i class="fa fa-pencil"></i></h1></div>
+    <div class='container' ng-show="user.job"><h1 class="text-center">{{ user.name}}</h1>
+
+      <p><span class="btn btn-success"><i class="fa fa-briefcase pull-left"></i>&nbsp;職業</span>
+       {{ user.job}}</p>
+
+      <p><span class="btn btn-success"><i class="fa fa-user"></i>&nbsp;自我介紹</span>
+
+      <div class="jumbotron"  ng-bind-html="user.introduction | to_trusted"></div>
+      </p>
+
+      <p><span class="btn btn-success"><i class="fa fa-heart"></i> &nbsp;興趣</span><span class="btn-group" ng-repeat="habit in user.habits"><button class="btn btn-default">{{habit}}</button></span></p>
+      <p><span class="btn btn-success"><i class="fa fa-paint-brush"></i> &nbsp;我想學</span><span class="btn-group" ng-repeat="want in user.wants"><button class="btn btn-default">{{want}}</button></span> </p>
+
+      <p><span class="btn btn-success"><i class="glyphicon glyphicon-thumbs-up"></i> &nbsp;才能</span></p>
+      <div class="jumbotron">
+      <p ng-repeat="talentitem in user.talents"><span
+          class="tags">{{ talentitem.talent}}</span> <span
+          class=" badge">{{ talentitem.rating}}</span>
+        <br/>
+        <span class="text-info" ng-bind-html="talentitem.intro | nl2br"></span>
+      </div>
+      <p></p></p>
+
+      <p><span class="btn btn-success"><i class="glyphicon glyphicon-globe"></i> &nbsp;我的網站</span>
+      <p style="padding-left: 30px" ng-repeat="url in urls">
+        <span><a ng-href="{{url.url}}" target="_blank">{{url.name}}</a></span>
+
+      <p></p></p>
+      </p>
+    </div>
+  </div>
+</div>

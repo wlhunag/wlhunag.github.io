@@ -1,0 +1,24 @@
+<script src="scripts/ckeditor/ckeditor.js"></script>
+<script> CKEDITOR.env.isCompatible = true;</script>
+<h2><i class="fa fa-comments"></i>新專案</h2>
+<div ng-show="entry.title && entry.explanation && entry.img" ng-click="submit()"
+     class="pull-right btn btn-success btn-lg" ui-sref="business">
+  <i class="fa fa-pencil-square-o"></i>儲存專案
+</div>
+
+<form name="myForm" novalidate>
+  <div class="row form-inline">
+    <div class="form-group">
+      <label for="title"><h4>專案名稱：</h4></label>
+      <input autofocus name="title" id="title" type="text" ng-model="entry.title" required="true" placeholder="保姆">
+    </div>
+    <div class="form-group ">
+      <label for="img"><h4>專案封面圖片網址：</h4></label>
+      <input name="title" id="img" type="url" ng-model="entry.img" required>
+      <img ng-src="{{entry.img}}" style="max-height: 80px;max-width: 80px;"/>
+    </div>
+  </div>
+     <textarea ck-editor ng-model="entry.explanation" name="editor1" id="editor1" rows="20" cols="80"></textarea>
+  <p class="help-block">請盡可能的清楚描述您的想法，可附圖、連結、影片等等，編輯區的右下角可調整大小</p>
+
+</form>

@@ -1,0 +1,47 @@
+<div class="container-fluid"><h3>檢視專案</h3><a ui-sref=business
+                                             class="pull-right btn btn-primary btn-outline btn-rounded">返回創業</a>
+
+  <div ng-show="entry.isPoster" ui-sref="editbusiness({busId: busId})" type="button"
+       class="btn btn-rounded btn-outline btn-warning pull-right">
+    <i class="glyphicon glyphicon-edit green"></i>編輯
+  </div>
+  <div ng-show="entry.isPoster" ng-click="removeBus(busId)" ui-sref="business" type="button"
+       class="btn btn-rounded btn-outline btn-danger pull-right">
+    <i class="glyphicon glyphicon-trash"></i>刪除
+  </div>
+  <form name="myForm" novalidate>
+    <div class="row">
+      <h4 class="btn btn-lg btn-info">{{ entry.title }}
+      </h4>
+      <img ng-src="{{entry.img}}" style="max-height: 80px;max-width: 80px;"/>
+    </div>
+    <div class="col-xs-12 col-md-12 col-lg-12 jumbotron"><p id="setimg" ng-bind-html="entry.explanation | to_trusted"></p></div>
+
+    <hr>
+
+ <div class="row"><div class="col-lg-6 col-lg-offset-6 col-xs-8 col-xs-offset-4">   <strong>&nbsp;張貼者</strong>&nbsp;&nbsp;
+    <img ng-src="{{ entry.posterPicture}}" style="max-height:50px;max-width: 50px">&nbsp;{{ entry.poster}}
+    <span>&nbsp;&nbsp; {{entry.edittime || entry.time | date:'yyyy-MM-dd HH:mm'}}</span></div></div>
+  </form>
+  <hr/>
+  <div class="comment">
+    <div ng-repeat="comment in comments track by $index">
+      <img class="pic" ng-src="{{ comment.picture}}" style="max-height:70px;max-width: 60px; padding-right: 8px">
+      <strong class="text-primary">{{ comment.from }}</strong>
+         <span class="text-danger glyphicon glyphicon-trash pull-right" ng-show="authData.uid == comment.posterId"
+               ng-click="comments.$remove(comment)">
+         </span>
+      <span ng-show="authData.uid == comment.posterId" editable-text="comments[$index].body"
+            onbeforesave="updateComment($data,$index,'body')">{{ comment.body }}</span>
+      <span ng-hide="authData.uid == comment.posterId">{{ comment.body }}</span>
+
+      <div class="help-block" style="font-size: smaller">{{comment.time | date:'yyyy-MM-dd HH:mm'}}</div>
+    </div>
+    <div id="textWrap" style="width:100%;"  ng-if="authData">
+      <img class="pic pull-left" ng-src="{{ comments.posterPicture}}"
+           style="max-height:70px;max-width: 60px; padding-right: 8px">
+      <input style="width:80%;height: 50px;" ng-model="comment" ng-keydown="addComments($event)" type="text"
+             id="messageInput" row="3" placeholder="留言...">
+    </div>
+  </div>
+</div>

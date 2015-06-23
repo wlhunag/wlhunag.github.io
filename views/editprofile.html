@@ -1,0 +1,111 @@
+<script src="scripts/ckeditor/ckeditor.js"></script>
+<script> CKEDITOR.env.isCompatible = true;</script>
+<div class="container-fluid">
+
+  <div><a ui-sref=profile ng-click="saveProfile()" ng-disabled="form.$invalid"
+          class="pull-right btn btn-primary btn-outline btn-rounded">檢視檔案</a>
+
+
+  </div>
+  <div class="row">
+    <div>
+      <h2>自我介紹</h2>
+
+      <p>介紹你的專長、讓大家更認識你</p>
+
+      <form name="form" ng-submit="saveProfile()" novalidate>
+        <div class="form-group">
+          <label for="fullname">Your name (what other members will see)</label>
+          <input ng-model="user.name" type="text" class="form-control" id="fullname" placeholder="Enter your name"
+                 required>
+        </div>
+        <div class="form-group">
+          <label for="job">工作</label>
+          <input ng-model="user.job" type="text" class="form-control" id="job" placeholder="Enter your job"
+                 required>
+
+          <p class="help-block">For example: '正大聯合會計師事務所 稅務助理'</p>
+        </div>
+        <div class="form-group">
+          <label for="editor1">自我介紹</label>
+          <textarea name="editor1" id="editor1" ck-editor rows="10" cols="80" ng-model="user.introduction" required>
+          輸入你的自我介紹
+            </textarea>
+        </div>
+        <div class="form-group">
+          <label for="description">興趣簡介</label> (用英文逗號隔開)
+          <input ng-model="user.habits" ng-list type="text" class="form-control" id="description" placeholder="釣魚，跑步">
+          <ul><li ng-repeat="habit in user.habits">{{habit }}</li></ul>
+        </div>
+        <div class="form-group">
+          <label for="want">我想學...</label> (用英文逗號隔開)
+          <input ng-model="user.wants" ng-list type="text" class="form-control" id="want" placeholder="如何代理商品、如何寫手機App">
+          <ul><li ng-repeat="want in user.wants">{{want }}</li></ul>
+        </div>
+      </form>
+      <div class="form-group">
+        <label for="stories">才能介紹</label><br/>
+        <ul class="">
+          <li ng-repeat="eachtalent in talents track by $index">
+              <span class="tags" editable-text="talents[$index].talent"
+                    onbeforesave="updateTalent($data,$index,'talent')">
+                {{eachtalent.talent}}</span>
+
+              <span editable-select="talents[$index].rating"
+                    e-ng-options="item.rating as item.rating for item in ratingModel"
+                    class="badge" onbeforesave="updateTalent($data,$index,'rating')">
+                {{ eachtalent.rating}}</span>
+
+              <span class="" editable-textarea="talents[$index].intro"
+                    onbeforesave="updateTalent($data,$index,'intro')">
+                {{ eachtalent.intro}}</span>
+            <a ng-click="talents.$remove(eachtalent)">
+              <span class="glyphicon glyphicon-trash text-danger pull-right"></span></a>
+
+            <p></p>
+          </li>
+        </ul>
+        <div class="container">
+          <input type="text" autofocus ng-model="talentnew" id="stories" class="" placeholder="python">
+          <select ng-model="rate" ng-options="item.rating for item in ratingModel">
+            <option value="">-- 請選擇 --</option>
+          </select>
+          <textarea ng-model="intro" placeholder="描述你提供的才能程度" style="min-height: 100px"
+                    class="form-control ng-pristine ng-valid"></textarea>
+          <button type="button" class="btn btn-success " ng-click="addTalent()"><span
+              class="glyphicon glyphicon-plus"></span> Add
+          </button>
+
+          <p class="help-block">詳細介紹可以讓大家更認識你</p>
+        </div>
+        <div class="form-group">
+          <label>我的網站連結</label>
+          <ul class="">
+            <li ng-repeat="eachurl in urls track by $index">
+              <span class="text-info">
+                {{eachurl.name}}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+              <span class="text-primary">
+                <a ng-href="{{ eachurl.url}}">{{ eachurl.url}}</a></span>
+
+              <a ng-click="urls.$remove(eachurl)">
+                <span class="glyphicon glyphicon-trash text-danger pull-right"></span></a>
+
+              <p></p>
+            </li>
+          </ul>
+          <div class="container">
+            <label for="urlsname" class="btn btn-outline btn-info btn-rounded ">新增網站</label>
+            <input type="text" ng-model="urlname" id="urlsname" placeholder="Facebook">
+            <input type="url"  ng-model="url" id="urls" class="" placeholder="https://www.facebook.com">
+            <button type="button" class="btn" ng-click="addUrl()"><span
+                class="glyphicon glyphicon-plus"></span> Add
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
