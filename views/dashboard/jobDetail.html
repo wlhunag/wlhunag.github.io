@@ -138,10 +138,10 @@
       <span ng-hide="authData.uid == comment.posterId">{{ comment.body }}</span>
       <div class="help-block" style="font-size: smaller">{{comment.time | date:'yyyy-MM-dd HH:mm'}}</div>
     </div>
-    <div id="textWrap" style="width:100%;"  ng-if="authData.uid">
+    <div id="textWrap" style="width:100%;"  ng-show="authData.uid">
       <img class="pic pull-left" ng-src="{{ comments.posterPicture}}"
            style="max-height:70px;max-width: 60px; padding-right: 8px">
-      <input style="width:80%;height: 50px;" ng-model="comment" ng-keydown="addComments($event)" type="text"
+      <input style="width:80%;height: 50px;" ng-model="newcomment" ng-keydown="addComments($event)" type="text"
              id="messageInput" row="3" placeholder="留言...">
     </div>
   </div>

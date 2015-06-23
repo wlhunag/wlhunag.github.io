@@ -375,7 +375,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                     //console.log($scope.entry);
                     try {if ($scope.authData.uid == $scope.entry.posterId)  {
                         $scope.entry.isPoster = true;
-                        console.log($scope.entry.isPoster);
+                        console.log("isPoster: "+$scope.entry.isPoster);
                     }}
                     catch (err){
                         console.log("Not login");
@@ -426,16 +426,17 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             });
             //ADD MESSAGE METHOD
             $scope.addComments = function(e) {
-                console.warn("Trigger");
+                console.log($scope.newcomment);
+                console.log(e.keyCode);
 
                 //LISTEN FOR RETURN KEY
-                if (e.keyCode === 13 && $scope.comment) {
+                if (e.keyCode === 13 && $scope.newcomment) {
                     $scope.comments.$add({
                         from: $scope.comments.poster,
                         picture:$scope.comments.posterPicture,
                         posterId:$scope.comments.posterId,
                         time: new Date().getTime(),
-                        body: $scope.comment
+                        body: $scope.newcomment
                     });
 
                     //RESET MESSAGE
@@ -696,8 +697,6 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             });
             //ADD MESSAGE METHOD
             $scope.addComments = function(e) {
-                console.warn("Trigger");
-
                 //LISTEN FOR RETURN KEY
                 if (e.keyCode === 13 && $scope.comment) {
                     $scope.comments.$add({
