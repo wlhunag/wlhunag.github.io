@@ -57,7 +57,7 @@
                                                                      ng-bind-html="talentitem.intro | nl2br"> </span>
               </div>
               </p>
-              <div ng-show="detailview"><strong class="text-primary">我的網站：</strong>
+              <div ng-show="detailview" ng-if="user.urls"><strong class="text-primary">我的網站：</strong>
                 <a type="button" class="btn btn-success" ng-href="{{url.url}}" target="_blank"
                    ng-repeat="url in user.urls">
                   {{url.name}}</a>

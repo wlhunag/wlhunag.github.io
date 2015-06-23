@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="fix guest user edit and delete function">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/editjobDetail.html" afterPath="$PROJECT_DIR$/views/dashboard/editjobDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/postnewjob.html" afterPath="$PROJECT_DIR$/views/dashboard/postnewjob.html" />
+    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="update editor to ckeditor">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/education.html" afterPath="$PROJECT_DIR$/views/dashboard/education.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/job.html" afterPath="$PROJECT_DIR$/views/dashboard/job.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/newbusiness.html" afterPath="$PROJECT_DIR$/views/dashboard/newbusiness.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/scripts.js" afterPath="$PROJECT_DIR$/scripts/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="self-reliance.iws" />
@@ -27,24 +29,14 @@
     <splitter split-orientation="horizontal" split-proportion="0.4493464">
       <split-first>
         <leaf>
-          <file leaf-file-name="job.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="job.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/dashboard/job.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.5666666">
-                  <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+                <state vertical-scroll-proportion="0.60552484">
+                  <caret line="39" column="79" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
                   <folding>
                     <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/main.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="2725" column="19" selection-start-line="2725" selection-start-column="19" selection-end-line="2725" selection-end-column="19" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -88,11 +80,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="editjobDetail.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="editjobDetail.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/editjobDetail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="51" />
+                <state vertical-scroll-proportion="-3.1724138">
+                  <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -101,8 +93,8 @@
           <file leaf-file-name="businessDetail.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="30" column="103" selection-start-line="30" selection-start-column="103" selection-end-line="30" selection-end-column="103" />
+                <state vertical-scroll-proportion="-3.5666666">
+                  <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
                   <folding>
                     <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
@@ -142,6 +134,16 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="newbusiness.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/dashboard/newbusiness.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-10.5">
+                  <caret line="15" column="114" selection-start-line="15" selection-start-column="114" selection-end-line="15" selection-end-column="114" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -149,8 +151,8 @@
           <file leaf-file-name="education.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/education.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+                <state vertical-scroll-proportion="-17.566668">
+                  <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
                   <folding>
                     <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -191,20 +193,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.1694915">
-                  <caret line="381" column="34" selection-start-line="381" selection-start-column="34" selection-end-line="381" selection-end-column="34" />
+                <state vertical-scroll-proportion="0.5673516">
+                  <caret line="798" column="32" selection-start-line="798" selection-start-column="32" selection-end-line="798" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="postnewjob.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="postnewjob.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/postnewjob.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2873432">
+                <state vertical-scroll-proportion="-4.3448277">
                   <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
                   <folding />
                 </state>
@@ -256,7 +258,6 @@
         <option value="$PROJECT_DIR$/scripts/ckeditor/contents.css" />
         <option value="$PROJECT_DIR$/scripts/ckeditor/plugins/link/dialogs/link.js" />
         <option value="$PROJECT_DIR$/views/dashboard/editbusiness.html" />
-        <option value="$PROJECT_DIR$/views/dashboard/newbusiness.html" />
         <option value="$PROJECT_DIR$/styles/xeditable.css" />
         <option value="$PROJECT_DIR$/views/dashboard/business.html" />
         <option value="$PROJECT_DIR$/scripts/ckeditor/config.js" />
@@ -264,7 +265,6 @@
         <option value="$PROJECT_DIR$/views/profile.html" />
         <option value="$PROJECT_DIR$/views/editprofile.html" />
         <option value="$PROJECT_DIR$/styles/main.css" />
-        <option value="$PROJECT_DIR$/views/dashboard/education.html" />
         <option value="$PROJECT_DIR$/views/login.html" />
         <option value="$PROJECT_DIR$/views/dashboard/businessDetail.html" />
         <option value="$PROJECT_DIR$/views/dashboard.html" />
@@ -273,11 +273,13 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index-local.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/scripts/scripts.js" />
         <option value="$PROJECT_DIR$/views/dashboard/jobDetail.html" />
-        <option value="$PROJECT_DIR$/views/dashboard/job.html" />
         <option value="$PROJECT_DIR$/views/dashboard/editjobDetail.html" />
         <option value="$PROJECT_DIR$/views/dashboard/postnewjob.html" />
+        <option value="$PROJECT_DIR$/views/dashboard/education.html" />
+        <option value="$PROJECT_DIR$/views/dashboard/newbusiness.html" />
+        <option value="$PROJECT_DIR$/scripts/scripts.js" />
+        <option value="$PROJECT_DIR$/views/dashboard/job.html" />
       </list>
     </option>
   </component>
@@ -585,12 +587,6 @@
       <option name="number" value="Default" />
       <updated>1431620519789</updated>
     </task>
-    <task id="LOCAL-00081" summary="Add some function of Business view">
-      <created>1434294484706</created>
-      <option name="number" value="00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1434294484709</updated>
-    </task>
     <task id="LOCAL-00082" summary="Add search bar for business view">
       <created>1434294769920</created>
       <option name="number" value="00082" />
@@ -879,7 +875,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435067350461</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="update editor to ckeditor">
+      <created>1435067577792</created>
+      <option name="number" value="00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1435067577792</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TodoView">
@@ -949,7 +951,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Add comments to JobDetail and BusinessDetail view" />
     <MESSAGE value="change website image&#10;" />
     <MESSAGE value="try to fix analytic code" />
     <MESSAGE value="allow iframe" />
@@ -974,7 +975,8 @@
     <MESSAGE value="update sitemap" />
     <MESSAGE value="update website url" />
     <MESSAGE value="fix guest user edit and delete function" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix guest user edit and delete function" />
+    <MESSAGE value="update editor to ckeditor" />
+    <option name="LAST_COMMIT_MESSAGE" value="update editor to ckeditor" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1150,13 +1152,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard/newbusiness.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2552486">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/editbusiness.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1221,33 +1216,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard/education.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/business.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1878453">
           <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="103" selection-start-line="30" selection-start-column="103" selection-end-line="30" selection-end-column="103" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1345,10 +1317,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard/job.html">
+    <entry file="file://$PROJECT_DIR$/views/dashboard/postnewjob.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3448277">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard/education.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.566668">
+          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard/editjobDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1724138">
+          <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard/newbusiness.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.5">
+          <caret line="15" column="114" selection-start-line="15" selection-start-column="114" selection-end-line="15" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.5666666">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard/job.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60552484">
+          <caret line="39" column="79" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -1357,24 +1376,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1694915">
-          <caret line="381" column="34" selection-start-line="381" selection-start-column="34" selection-end-line="381" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard/editjobDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard/postnewjob.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2873432">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.5673516">
+          <caret line="798" column="32" selection-start-line="798" selection-start-column="32" selection-end-line="798" selection-end-column="32" />
           <folding />
         </state>
       </provider>

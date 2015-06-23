@@ -802,7 +802,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             max = parseInt(max, 10);
             if (!max) return value;
             if (value.length <= max) return value;
-            value = value.substr(0, max);
+            value = value.replace(/<[^>]+>/gm, '').substr(0, max);
             if (wordwise) {
                 var lastspace = value.lastIndexOf(' ');
                 if (lastspace != -1) {
