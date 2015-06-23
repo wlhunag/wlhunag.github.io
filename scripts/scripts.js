@@ -383,19 +383,18 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                     //console.log($scope.entry);
                     try {if ($scope.authData.uid == $scope.entry.posterId)  {
                         $scope.entry.isPoster = true;
+                        console.log($scope.entry.isPoster);
                     }}
                     catch (err){
                         console.log("Not login");
+                        $scope.entry.isPoster = false;
                     }
 
                 })
                 .catch(function(err) {
                     console.error(err);
                 });
-            //console.log($scope.authData);
             $scope.jobId = $stateParams.jobId;
-            //console.log($scope);
-            //console.log($scope.entry.poster);
 
             function getName(authData) {
                 switch (authData.provider) {

@@ -1,3 +1,5 @@
+<script src="scripts/ckeditor/ckeditor.js"></script>
+<script> CKEDITOR.env.isCompatible = true;</script>
 <form id="new-job" name="entryform" novalidate="" ng-class="{'needfix':needfix}" class="ng-pristine ng-invalid ng-invalid-required">
     <h3><i class="glyphicon glyphicon-edit green"></i> 編輯職缺</h3>
     <a  ng-click="submit()"   class="btn btn-success btn-lg btn-outline btn-rounded pull-right">
@@ -67,7 +69,9 @@
             <h4>工作內容</h4>
         </div>
         <div class="col-sm-10">
-            <textarea name="desc" ng-model="entry.desc" placeholder="請詳加描述你提供的職缺其工作內容(純文字排版)" style="min-height: 200px" class="form-control ng-pristine ng-valid"></textarea>
+            <textarea name="desc" id="editor1" ck-editor rows="15" cols="80" ng-model="entry.desc" required>
+          請詳加描述你提供的職缺其工作內容
+            </textarea>
         </div>
     </div>
     <div class="row">
@@ -75,7 +79,10 @@
             <h4>條件要求</h4>
         </div>
         <div class="col-sm-10">
-            <textarea name="desc" ng-model="entry.requirement" placeholder="請詳加描述你提供的職缺其工作要求(純文字排版)" style="min-height: 200px" class="form-control ng-pristine ng-valid"></textarea>
+
+            <textarea name="editor2"  id="editor2" ck-editor rows="15" cols="80" ng-model="entry.requirement" class="form-control ng-pristine ng-valid">
+                      請詳加描述你提供的職缺其工作要求
+            </textarea>
         </div>
     </div>
     <hr>
@@ -92,7 +99,9 @@
             <h4>公司介紹</h4>
         </div>
         <div class="col-sm-10">
-            <textarea name="compdesc" ng-model="entry.compdesc" placeholder="請簡單描述職缺所在的公司(純文字排版)" style="min-height: 100px" class="form-control ng-pristine ng-valid"></textarea>
+             <textarea name="editor3"  id="editor3" ck-editor rows="10" cols="80" ng-model="entry.compdesc" class="form-control ng-pristine ng-valid">
+           請簡單描述職缺所在的公司(純文字排版)
+             </textarea>
         </div>
     </div><br>
     <div class="row">

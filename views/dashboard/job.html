@@ -35,9 +35,9 @@
         <tr class="animate-repeat" ng-animate="'animate'" ng-repeat="job in jobs | orderBy:'-time' | filter:query"
             ui-sref="jobDetail({jobId: job.$id})">
           <td>{{ job.title }}</td>
-          <td class="text-info">{{ job.location|cut:true:6 }}</td>
-          <td class="hidden-xs text-success">{{ job.desc |cut:true:30 }}</a></td>
-          <td class="hidden-xs">{{ job.requirement |cut:true:30 }}</td>
+          <td class="text-info">{{ job.location|cut:true:12 }}</td>
+          <td class="hidden-xs text-success"><span ng-bind-html="job.desc|cut:true:60 | to_trusted "></span></a></td>
+          <td class="hidden-xs"><span ng-bind-html="job.requirement|cut:true:60 | to_trusted "></span></td>
           <td class=" text-success">{{ job.company }}</td>
           <td>{{ job.salary1|currency:limitTo:0}} - {{ job.salary2 |currency: limitTo:0}}</td>
           <td ng-if="user.isAdmin"><a ng-click="jobs.$remove(job)"><span
