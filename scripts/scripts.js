@@ -257,9 +257,6 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
     .controller("ProfileCtrl", ["$scope", "$state", "$firebaseObject", "$firebaseArray", "$stateParams","$location",
         function ($scope, $state, $firebaseObject, $firebaseArray, $stateParams,$location) {
             $scope.$state = $state;
-            //$scope.params = $stateParams;
-            //console.log($scope.params);
-
 
             $scope.ratingModel = [
                 {id: 1, rating: '入門'},
@@ -269,19 +266,26 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             var ref = new Firebase("https://amber-heat-6612.firebaseio.com");
             var authData = ref.getAuth();
             $scope.authData = authData;
-            //console.log($scope.params);
             if (!$scope.authData){
-                //$location.path('/login');
                 $state.go('login');
             }
 
-            //authData.uid = $scope.params || authData.uid;
             console.log(authData.uid);
 
             var nref = ref.child("users").child(authData.uid);
+            $scope.rentry = $firebaseObject(nref);
+            //已經three-way-binding 就不用再submit 資料了
+            $scope.rentry.$bindTo($scope, "user");
+
+            $scope.rentry.$loaded()
+                .then(function() {
+                    console.log($scope.user);
+                })
+                .catch(function(err) {
+                    console.error(err);
+                });
 
             // create a synchronized array
-            $scope.user = $firebaseObject(nref);
             var nnref = ref.child("users").child(authData.uid).child("talents");
             var unref = ref.child("users").child(authData.uid).child("urls");
 
@@ -322,18 +326,6 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                 item[select] = data;
                 $scope.talents.$save(item).then(function(){});
             };
-
-
-            console.log($scope.user);
-            $scope.saveProfile = function () {
-                console.log($scope.user);
-                $scope.user.$save().then(function (nref) {
-                    nref.key() === $scope.user.$id; // true
-                }, function (error) {
-                    console.log("Error:", error);
-                });
-                $state.go('profile')
-            }
         }])
 
 
