@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="update readme">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sitemap.xml" />
+    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="add sitemap">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robots.txt" afterPath="$PROJECT_DIR$/robots.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -126,7 +125,7 @@
             <entry file="file://$PROJECT_DIR$/robots.txt">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.08983957">
-                  <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+                  <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -577,12 +576,6 @@
       <option name="number" value="Default" />
       <updated>1431620519789</updated>
     </task>
-    <task id="LOCAL-00075" summary="align edu view picture">
-      <created>1434211334103</created>
-      <option name="number" value="00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1434211334103</updated>
-    </task>
     <task id="LOCAL-00076" summary="Add lang file back">
       <created>1434211445189</created>
       <option name="number" value="00076" />
@@ -871,7 +864,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435047942831</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="add sitemap">
+      <created>1435049769177</created>
+      <option name="number" value="00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1435049769177</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TodoView">
@@ -941,7 +940,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="remove html5 mode&#10;because Github page doesn't support it&#10;http://stackoverflow.com/a/17242276/1686094" />
     <MESSAGE value="delete disqus" />
     <MESSAGE value="enlarge logout btn" />
     <MESSAGE value="shrink logout btn, hide sidebar scroll" />
@@ -966,7 +964,8 @@
     <MESSAGE value="remove ng-show for job remover, and use ng-if instead." />
     <MESSAGE value="hide comments inout field for non-login users." />
     <MESSAGE value="update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
+    <MESSAGE value="add sitemap" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sitemap" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1365,7 +1364,7 @@
     <entry file="file://$PROJECT_DIR$/robots.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08983957">
-          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
           <folding />
         </state>
       </provider>

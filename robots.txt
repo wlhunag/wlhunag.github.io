@@ -2,4 +2,4 @@
 
 User-agent: *
 
-Sitemap: https://github.com/wlhunag/wlhunag.github.io/blob/master/sitemap.xml
+Sitemap: https://wlhunag.github.io/sitemap.xml
