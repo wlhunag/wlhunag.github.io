@@ -1,6 +1,6 @@
 # 自立支援網站 
 A site for self-reliance program
-http://wlhunag.github.io/self-reliance/
+http://wlhunag.github.io/
 #####(歡迎志願者一起服務，<a href="https://www.facebook.com/wlhunag">聯絡我</a> )
 
 這個想法已經醞釀很久了，前一陣子教會開始自立支援中心的課程，著重「工作」、「教育」、「創業」三個面向的訓練，所以我就嘗試著架一個網站讓教會成員使用
