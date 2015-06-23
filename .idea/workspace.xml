@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="update editor to ckeditor">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/education.html" afterPath="$PROJECT_DIR$/views/dashboard/education.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/job.html" afterPath="$PROJECT_DIR$/views/dashboard/job.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/newbusiness.html" afterPath="$PROJECT_DIR$/views/dashboard/newbusiness.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/scripts.js" afterPath="$PROJECT_DIR$/scripts/scripts.js" />
+    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="modify job description cut length">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/editjobDetail.html" afterPath="$PROJECT_DIR$/views/dashboard/editjobDetail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/postnewjob.html" afterPath="$PROJECT_DIR$/views/dashboard/postnewjob.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="self-reliance.iws" />
@@ -29,10 +27,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.4493464">
       <split-first>
         <leaf>
-          <file leaf-file-name="job.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="job.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/job.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.60552484">
+                <state vertical-scroll-proportion="-18.266666">
                   <caret line="39" column="79" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
                   <folding>
                     <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -80,12 +78,15 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="editjobDetail.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="editjobDetail.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/dashboard/editjobDetail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.1724138">
-                  <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
-                  <folding />
+                <state vertical-scroll-proportion="0.114025086">
+                  <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+                  <folding>
+                    <element signature="n#style#0;n#span#0;n#div#1;n#div#2;n#form#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#form#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -193,22 +194,25 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5673516">
+                <state vertical-scroll-proportion="-8.423729">
                   <caret line="798" column="32" selection-start-line="798" selection-start-column="32" selection-end-line="798" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="postnewjob.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="postnewjob.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/dashboard/postnewjob.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.3448277">
-                  <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-                  <folding />
+                <state vertical-scroll-proportion="0.40706956">
+                  <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+                  <folding>
+                    <element signature="n#style#0;n#span#0;n#div#1;n#div#4;n#form#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#5;n#form#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -274,12 +278,12 @@
         <option value="$PROJECT_DIR$/index-local.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/views/dashboard/jobDetail.html" />
-        <option value="$PROJECT_DIR$/views/dashboard/editjobDetail.html" />
-        <option value="$PROJECT_DIR$/views/dashboard/postnewjob.html" />
         <option value="$PROJECT_DIR$/views/dashboard/education.html" />
         <option value="$PROJECT_DIR$/views/dashboard/newbusiness.html" />
         <option value="$PROJECT_DIR$/scripts/scripts.js" />
         <option value="$PROJECT_DIR$/views/dashboard/job.html" />
+        <option value="$PROJECT_DIR$/views/dashboard/editjobDetail.html" />
+        <option value="$PROJECT_DIR$/views/dashboard/postnewjob.html" />
       </list>
     </option>
   </component>
@@ -587,12 +591,6 @@
       <option name="number" value="Default" />
       <updated>1431620519789</updated>
     </task>
-    <task id="LOCAL-00082" summary="Add search bar for business view">
-      <created>1434294769920</created>
-      <option name="number" value="00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1434294769920</updated>
-    </task>
     <task id="LOCAL-00083" summary="Update icon">
       <created>1434329293648</created>
       <option name="number" value="00083" />
@@ -881,7 +879,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435067577792</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="modify job description cut length">
+      <created>1435070309037</created>
+      <option name="number" value="00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1435070309037</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TodoView">
@@ -951,7 +955,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="change website image&#10;" />
     <MESSAGE value="try to fix analytic code" />
     <MESSAGE value="allow iframe" />
     <MESSAGE value="disallow iframe" />
@@ -976,7 +979,8 @@
     <MESSAGE value="update website url" />
     <MESSAGE value="fix guest user edit and delete function" />
     <MESSAGE value="update editor to ckeditor" />
-    <option name="LAST_COMMIT_MESSAGE" value="update editor to ckeditor" />
+    <MESSAGE value="modify job description cut length" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify job description cut length" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1317,14 +1321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard/postnewjob.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3448277">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/education.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.566668">
@@ -1333,14 +1329,6 @@
             <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard/editjobDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1724138">
-          <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1366,7 +1354,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/job.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60552484">
+        <state vertical-scroll-proportion="-18.266666">
           <caret line="39" column="79" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1376,9 +1364,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5673516">
+        <state vertical-scroll-proportion="-8.423729">
           <caret line="798" column="32" selection-start-line="798" selection-start-column="32" selection-end-line="798" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard/editjobDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.114025086">
+          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#2;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard/postnewjob.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40706956">
+          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#4;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#5;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
