@@ -1,3 +1,5 @@
 # robotstxt.org
 
 User-agent: *
+
+Sitemap: https://github.com/wlhunag/wlhunag.github.io/blob/master/sitemap.xml
