@@ -1,5 +1,5 @@
 "use strict";
-angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xeditable"])
+angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xeditable", "ui.bootstrap"])
 
     .config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.when("/dashboard", "/dashboard/job"),
@@ -351,15 +351,47 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
         };
     })
 
-    .controller("EduCtrl", ["$scope", "Entry",
-        function ($scope, Entry) {
+    .controller("EduCtrl", ["$scope", "Entry", "$modal","$document",
+        function ($scope, Entry, $modal, $document) {
             var users = Entry.get({id: "users"}).$promise;
             users.then(function onSuccess(response) {
                 $scope.users = response.toJSON();
             });
+            var bodyRef = angular.element( $document[0].body );
+            $scope.open = function (user) {
+                bodyRef.addClass('ovh');
+
+                var modalInstance = $modal.open({
+                    animation: true,
+                    templateUrl: 'views/modal-profile.html',
+                    controller: 'ModalInstanceCtrl',
+                    size: 'lg',
+                    resolve: {
+                        user: function () {
+                            return user;
+                        }
+                    }
+                });
+
+                modalInstance.result.then(function (user) {
+                    bodyRef.removeClass('ovh');
+                    $scope.user = user;
+                }, function () {
+                    bodyRef.removeClass('ovh');
+                    //console.info('Modal dismissed at: ' + new Date());
+                });
+            };
 
         }])
 
+    .controller('ModalInstanceCtrl', function ($scope, $modalInstance, user) {
+
+        $scope.user = user;
+
+        $scope.ok = function () {
+            $modalInstance.close();
+        };
+    })
 
     .controller("JobDetailCtrl", ["$scope", "$stateParams", "$firebaseObject", "$firebaseArray","Auth",
         function ($scope, $stateParams, $firebaseObject,$firebaseArray, Auth) {

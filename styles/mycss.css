@@ -7,7 +7,10 @@ body
 .profile
 {
     min-height: 355px;
-    display: inline-table;
+    display: inline-block;
+    height: 400px;
+    /*overflow-y: auto;*/
+    overflow-y: hidden;
 }
 figcaption.ratings
 {
@@ -290,4 +293,16 @@ span.tags
 #setimg  img{
     max-width:100%;
     width: 100%;
+}
+
+.topright{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.modal-content {
+    overflow-y:auto;
 }

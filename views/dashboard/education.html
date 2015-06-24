@@ -23,9 +23,9 @@
       <div class="row">
         <div class="col-md-12  col-lg-12">
           <div class="animate-edu" ng-if="user.talents" ng-repeat="user in users |toArray | filter: talentquery">
-            <div ng-animate="'animate'" class="col-xs-10 col-sm-5 col-md-4 col-lg-4 well profile">
-              <h2>{{ user.name }}<a class="pull-right btn btn-info btn-rounded" ng-click="detailview = !detailview">
-                <span ng-show="detailview">隱藏</span><span ng-hide="detailview">詳細</span></a></h2>
+            <div ng-animate="'animate'" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 well profile">
+              <h2>{{ user.name }}<a class="pull-right btn btn-info btn-outline topright" ng-click="open(user)">
+                <span>詳細</span></a></h2>
 
               <figure>
                 <a ng-href="{{ user.authdata.facebook.cachedUserProfile.link ||user.authdata.google.cachedUserProfile.link}}"

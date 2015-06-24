@@ -1,0 +1,43 @@
+<body><div>
+  <div class="modal-header">
+    <h3 class="modal-title">個人檔案</h3>
+  </div>
+  <div class="row">
+    <div class="modal-body">
+    <div class='container'><h1 class="text-center">{{ user.name}}</h1>
+
+      <p><span class="btn btn-success"><i class="fa fa-briefcase pull-left"></i>&nbsp;職業</span>
+       {{ user.job}}</p>
+
+      <p><span class="btn btn-success"><i class="fa fa-user"></i>&nbsp;自我介紹</span>
+
+      <div class="jumbotron"  ng-bind-html="user.introduction | to_trusted"></div>
+      </p>
+
+      <p><span class="btn btn-success"><i class="fa fa-heart"></i> &nbsp;興趣</span><span class="btn-group" ng-repeat="habit in user.habits"><button class="btn btn-default">{{habit}}</button></span></p>
+      <p><span class="btn btn-success"><i class="fa fa-paint-brush"></i> &nbsp;我想學</span><span class="btn-group" ng-repeat="want in user.wants"><button class="btn btn-default">{{want}}</button></span> </p>
+
+      <p><span class="btn btn-success"><i class="glyphicon glyphicon-thumbs-up"></i> &nbsp;才能</span></p>
+      <div class="jumbotron">
+      <p ng-repeat="talentitem in user.talents"><span
+          class="tags">{{ talentitem.talent}}</span> <span
+          class=" badge">{{ talentitem.rating}}</span>
+        <br/>
+        <span class="text-info" ng-bind-html="talentitem.intro | nl2br"></span>
+      </div>
+      <p></p></p>
+
+      <p><span class="btn btn-success"><i class="glyphicon glyphicon-globe"></i> &nbsp;我的網站</span>
+      <p style="padding-left: 30px" ng-repeat="url in user.urls">
+        <span><a ng-href="{{url.url}}" target="_blank">{{url.name}}</a></span>
+
+      <p></p></p>
+      </p>
+    </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+  </div>
+</div>
+</body>
