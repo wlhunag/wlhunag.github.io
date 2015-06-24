@@ -172,6 +172,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                     delete authData.expires;
                     delete authData.auth;
                     delete authData.facebook.accessToken;
+                    delete authData.facebook.cachedUserProfile.picture;
                     delete authData.token;
                     $scope.authdata = authData;
 

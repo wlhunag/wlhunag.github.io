@@ -1,3 +1,7 @@
+<div class="alert alert-info alert-dismissible" id="success-alert" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>使用說明：</strong> 此處資料由大家填寫的個人檔案而來，按一下「詳細」可看到詳細資料。登入後才可以編輯個人檔案
+</div>
 <div><a ui-sref=editprofile class="pull-right btn btn-primary btn-outline btn-rounded">編輯個人檔案</a>
 
   <h2><i class="fa fa-graduation-cap  ">&nbsp;</i>
@@ -70,3 +74,12 @@
     </div>
   </div>
 </div>
+<script>
+  $(document).ready(function () {
+    $("#success-alert").hide();
+    $("#success-alert").alert();
+    $("#success-alert").fadeTo(4000, 1000).slideUp(1500, function () {
+      $("#success-alert").alert('close');
+    });
+  });
+</script>

@@ -1,6 +1,13 @@
 
   <div class="row">
-
+    <div class="alert alert-info alert-dismissible" id="success-alert" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>使用說明：</strong> 按一下每筆工作可以看到詳細資料。登入後才可以張貼工作
+    </div>
+    <div class="alert alert-success alert-dismissible" id="success-2" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>搜尋：</strong> 只要打入部分關鍵字就會直接跳出結果
+    </div>
     <div class="col-sm-12">
       <a ui-sref=newjob class="pull-right btn btn-primary btn-outline btn-rounded">張貼工作</a>
 
@@ -48,3 +55,15 @@
     </div>
   </div>
 </div>
+  <script>
+    $(document).ready(function () {
+      $("#success-alert").hide();
+      $("#success-alert").alert();
+      $("#success-alert").fadeTo(4000, 1000).slideUp(1500, function () {
+        $("#success-alert").alert('close');
+      });
+      $("#success-2").fadeTo(7000, 1000).slideUp(1500, function () {
+        $("#success-2").alert('close');
+      });
+    });
+  </script>

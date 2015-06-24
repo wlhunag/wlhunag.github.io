@@ -1,3 +1,8 @@
+<div class="alert alert-info alert-dismissible" id="success-alert" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+  </button>
+  <strong>使用說明：</strong> 按一下每個專案可以看到詳細資料。登入後才可以張貼專案
+</div>
 <h2><i class="fa fa-comments"></i>&nbsp;創業
 </h2>
 
@@ -25,9 +30,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12  col-lg-12">
-        <div class="animate-edu" ng-repeat="bus in buses |filter:query| orderBy:'-time'" ui-sref="businessDetail({busId: bus.$id})">
-          <div ng-animate="'animate'" class='clearfix  portfolio-item col-xs-11 col-sm-11 col-md-4 col-lg-4 well profile'>
-            <h2>{{ bus.title }} <span class="top-right" style="color: #737373;font-size:14px;">{{bus.time | date:'yyyy-MM-dd'}}</span></h2>
+        <div class="animate-edu" ng-repeat="bus in buses |filter:query| orderBy:'-time'"
+             ui-sref="businessDetail({busId: bus.$id})">
+          <div ng-animate="'animate'"
+               class='clearfix  portfolio-item col-xs-11 col-sm-11 col-md-4 col-lg-4 well profile'>
+            <h2>{{ bus.title }} <span class="top-right" style="color: #737373;font-size:14px;">{{bus.time | date:'yyyy-MM-dd'}}</span>
+            </h2>
 
             <div class="portfolio-thumb">
               <img ng-src="{{bus.img}}"
@@ -42,3 +50,12 @@
     </div>
   </div>
 </div>
+<script>
+  $(document).ready(function () {
+    $("#success-alert").hide();
+      $("#success-alert").alert();
+      $("#success-alert").fadeTo(3000, 500).slideUp(500, function () {
+        $("#success-alert").alert('close');
+    });
+  });
+</script>
