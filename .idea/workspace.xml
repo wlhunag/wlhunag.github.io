@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="fix bug : cannot leave a comment,&#10;resolve it by change ng-if to ng-show">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/scripts.js" afterPath="$PROJECT_DIR$/scripts/scripts.js" />
+    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="fix user avatar not the same size">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/main.css" afterPath="$PROJECT_DIR$/styles/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="self-reliance.iws" />
@@ -38,11 +38,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="jobDetail.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="jobDetail.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/jobDetail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.23425414">
-                  <caret line="121" column="43" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="43" />
+                <state vertical-scroll-proportion="-10.566667">
+                  <caret line="126" column="9" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
                   <folding>
                     <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
                   </folding>
@@ -55,6 +55,26 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="-22.066668">
                   <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main-content.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/main-content.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/styles/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.4">
+                  <caret line="6892" column="21" selection-start-line="6892" selection-start-column="21" selection-end-line="6892" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -124,7 +144,6 @@
         <option value="$PROJECT_DIR$/scripts/ckeditor/config.js" />
         <option value="$PROJECT_DIR$/styles/mycss.css" />
         <option value="$PROJECT_DIR$/views/profile.html" />
-        <option value="$PROJECT_DIR$/styles/main.css" />
         <option value="$PROJECT_DIR$/views/login.html" />
         <option value="$PROJECT_DIR$/views/dashboard.html" />
         <option value="$PROJECT_DIR$/robots.txt" />
@@ -141,6 +160,7 @@
         <option value="$PROJECT_DIR$/views/dashboard/jobDetail.html" />
         <option value="$PROJECT_DIR$/views/dashboard/businessDetail.html" />
         <option value="$PROJECT_DIR$/scripts/scripts.js" />
+        <option value="$PROJECT_DIR$/styles/main.css" />
       </list>
     </option>
   </component>
@@ -424,12 +444,6 @@
       <created>1431620519789</created>
       <option name="number" value="Default" />
       <updated>1431620519789</updated>
-    </task>
-    <task id="LOCAL-00087" summary="update og meta tags">
-      <created>1434330381538</created>
-      <option name="number" value="00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1434330381538</updated>
     </task>
     <task id="LOCAL-00088" summary="update og meta tags">
       <created>1434330453836</created>
@@ -719,7 +733,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435103374697</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="fix user avatar not the same size">
+      <created>1435104507598</created>
+      <option name="number" value="00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1435104507598</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TodoView">
@@ -789,7 +809,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="fix img in business detail out of screen" />
     <MESSAGE value="fix Google user image" />
     <MESSAGE value="count log time" />
     <MESSAGE value="add a guest login notification" />
@@ -814,7 +833,8 @@
     <MESSAGE value="overflow x auto" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="fix bug : cannot leave a comment,&#10;resolve it by change ng-if to ng-show" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug : cannot leave a comment,&#10;resolve it by change ng-if to ng-show" />
+    <MESSAGE value="fix user avatar not the same size" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix user avatar not the same size" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -827,14 +847,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1122,14 +1134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1796" column="7" selection-start-line="1796" selection-start-column="7" selection-end-line="1796" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/job.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1197,20 +1201,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.19977169">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/jobDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23425414">
-          <caret line="121" column="43" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="43" />
+        <state vertical-scroll-proportion="-10.566667">
+          <caret line="126" column="9" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
+    <entry file="file://$PROJECT_DIR$/views/main-content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.19977169">
-          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4">
+          <caret line="6892" column="21" selection-start-line="6892" selection-start-column="21" selection-end-line="6892" selection-end-column="21" />
           <folding />
         </state>
       </provider>

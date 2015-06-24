@@ -6891,7 +6891,7 @@ button.close {
     display: inherit;
     max-width: 100%;
     /*width: 125px;*/
-    max-height: 125px;
+    max-height: 200px;
     margin: 1em auto;
     -webkit-border-radius: 99em;
     -moz-border-radius: 99em;
