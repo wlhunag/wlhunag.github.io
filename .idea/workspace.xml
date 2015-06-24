@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="fix bug">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/businessDetail.html" afterPath="$PROJECT_DIR$/views/dashboard/businessDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/jobDetail.html" afterPath="$PROJECT_DIR$/views/dashboard/jobDetail.html" />
+    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="fix bug : cannot leave a comment,&#10;resolve it by change ng-if to ng-show">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/scripts.js" afterPath="$PROJECT_DIR$/scripts/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -20,32 +18,12 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="C:\Users\Aaron\Dropbox\programming\Code\self-reliance" />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.26795977">
-                    <caret line="377" column="47" selection-start-line="377" selection-start-column="47" selection-end-line="377" selection-end-column="47" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="self-reliance" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5294118">
+    <splitter split-orientation="horizontal" split-proportion="0.4335512">
       <split-first>
         <leaf>
           <file leaf-file-name="editprofile.html" pinned="false" current-in-tab="false">
@@ -60,11 +38,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="jobDetail.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="jobDetail.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/dashboard/jobDetail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.0666666">
-                  <caret line="121" column="26" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
+                <state vertical-scroll-proportion="0.23425414">
+                  <caret line="121" column="43" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="43" />
                   <folding>
                     <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
                   </folding>
@@ -72,10 +50,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="businessDetail.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="businessDetail.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7314917">
+                <state vertical-scroll-proportion="-22.066668">
                   <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
                   <folding />
                 </state>
@@ -89,8 +67,8 @@
           <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.21347032">
-                  <caret line="699" column="0" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
+                <state vertical-scroll-proportion="-0.19977169">
+                  <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -447,12 +425,6 @@
       <option name="number" value="Default" />
       <updated>1431620519789</updated>
     </task>
-    <task id="LOCAL-00086" summary="add og meta tags">
-      <created>1434329581225</created>
-      <option name="number" value="00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1434329581225</updated>
-    </task>
     <task id="LOCAL-00087" summary="update og meta tags">
       <created>1434330381538</created>
       <option name="number" value="00087" />
@@ -741,7 +713,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435101058101</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="fix bug : cannot leave a comment,&#10;resolve it by change ng-if to ng-show">
+      <created>1435103374696</created>
+      <option name="number" value="00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1435103374697</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TodoView">
@@ -811,7 +789,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="allow youtube embedded and order business by -date" />
     <MESSAGE value="fix img in business detail out of screen" />
     <MESSAGE value="fix Google user image" />
     <MESSAGE value="count log time" />
@@ -836,7 +813,8 @@
     <MESSAGE value="add some space" />
     <MESSAGE value="overflow x auto" />
     <MESSAGE value="fix bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
+    <MESSAGE value="fix bug : cannot leave a comment,&#10;resolve it by change ng-if to ng-show" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug : cannot leave a comment,&#10;resolve it by change ng-if to ng-show" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1211,28 +1189,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.066668">
+          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/jobDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0666666">
-          <caret line="121" column="26" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.23425414">
+          <caret line="121" column="43" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7314917">
-          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21347032">
-          <caret line="699" column="0" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.19977169">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
           <folding />
         </state>
       </provider>

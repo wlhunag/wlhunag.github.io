@@ -175,7 +175,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                     delete authData.token;
                     $scope.authdata = authData;
 
-                    $scope.authdata.picture = 'https://graph.facebook.com/' + authData.facebook.id + '/picture?type=large';
+                    $scope.authdata.picture = 'https://graph.facebook.com/' + authData.facebook.id + '/picture?width=150&height=150';
                     //console.log($scope.authdata.picture);
                     var ref = new Firebase("https://amber-heat-6612.firebaseio.com");
                     ref.child("users").child(authData.uid).update({
@@ -402,7 +402,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                     case 'google':
                         return authData.google.cachedUserProfile.picture;
                     case 'facebook':
-                        return 'https://graph.facebook.com/' + authData.facebook.id + '/picture?type=large';
+                        return 'https://graph.facebook.com/' + authData.facebook.id + '/picture?width=150&height=150';
                 }
             }
 
@@ -519,7 +519,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                 case 'google':
                     return authData.google.cachedUserProfile.picture;
                 case 'facebook':
-                    return 'https://graph.facebook.com/' + authData.facebook.id + '/picture?type=large';
+                    return 'https://graph.facebook.com/' + authData.facebook.id + '/picture?width=150&height=150';
             }
         };
 
@@ -574,7 +574,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                 case 'google':
                     return authData.google.cachedUserProfile.picture;
                 case 'facebook':
-                    return 'https://graph.facebook.com/' + authData.facebook.id + '/picture?type=large';
+                    return 'https://graph.facebook.com/' + authData.facebook.id + '/picture?width=150&height=150';
             }
         };
 
@@ -673,7 +673,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                     case 'google':
                         return authData.google.cachedUserProfile.picture;
                     case 'facebook':
-                        return 'https://graph.facebook.com/' + authData.facebook.id + '/picture?type=large';
+                        return 'https://graph.facebook.com/' + authData.facebook.id + '/picture?width=150&height=150';
                 }
             }
 
