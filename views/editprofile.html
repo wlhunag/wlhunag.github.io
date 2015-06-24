@@ -2,6 +2,11 @@
 <script> CKEDITOR.env.isCompatible = true;</script>
 <div class="container-fluid">
 
+  <div class="row">
+    <div class="alert alert-info alert-dismissible" id="success-alert" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      填寫自己的才能以後，自己的介紹就會出現在<a href="#/dashboard/business" class="alert-link">「教育」畫面</a>
+    </div>
   <div><a ui-sref=profile ng-click="saveProfile()" ng-disabled="form.$invalid"
           class="pull-right btn btn-primary btn-outline btn-rounded">檢視檔案</a>
 
@@ -109,3 +114,10 @@
   </div>
 
 </div>
+<script>
+  $(document).ready(function () {
+    $("#success-alert").fadeTo(4000, 1000).slideUp(1500, function () {
+      $("#success-alert").alert('close');
+    });
+  });
+</script>
