@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="add bootstrap alert message and auto hide after 4 seconds">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/modal-profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/min/ui-bootstrap-tpls.min.js" />
-      <change type="DELETED" beforePath="C:\Users\Aaron\Dropbox\programming\Code\wlhunag-github-io\wlhunag.github.io\scripts\min\ui-bootstrap-0.13.0.js" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Aaron\Dropbox\programming\Code\wlhunag-github-io\wlhunag.github.io\scripts\ui-bootstrap-0.13.0.js" afterPath="$PROJECT_DIR$/scripts/ui-bootstrap-tpls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/business.html" afterPath="$PROJECT_DIR$/views/dashboard/business.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/education.html" afterPath="$PROJECT_DIR$/views/dashboard/education.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index-local.html" afterPath="$PROJECT_DIR$/index-local.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/main.css" afterPath="$PROJECT_DIR$/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/mycss.css" afterPath="$PROJECT_DIR$/styles/mycss.css" />
+    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="change education view. show detail by modal">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/modal-profile.html" afterPath="$PROJECT_DIR$/views/modal-profile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/scripts.js" afterPath="$PROJECT_DIR$/scripts/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -123,21 +114,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.542373">
-                  <caret line="359" column="52" selection-start-line="359" selection-start-column="43" selection-end-line="359" selection-end-column="52" />
+                <state vertical-scroll-proportion="0.23858447">
+                  <caret line="359" column="58" selection-start-line="359" selection-start-column="58" selection-end-line="359" selection-end-column="58" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="modal-profile.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="modal-profile.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/modal-profile.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8758865">
-                  <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+                <state vertical-scroll-proportion="-0.0">
+                  <caret line="0" column="24" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -208,9 +199,9 @@
         <option value="$PROJECT_DIR$/index-local.html" />
         <option value="$PROJECT_DIR$/views/dashboard/business.html" />
         <option value="$PROJECT_DIR$/views/dashboard/education.html" />
-        <option value="$PROJECT_DIR$/scripts/scripts.js" />
-        <option value="$PROJECT_DIR$/views/modal-profile.html" />
         <option value="$PROJECT_DIR$/styles/mycss.css" />
+        <option value="$PROJECT_DIR$/views/modal-profile.html" />
+        <option value="$PROJECT_DIR$/scripts/scripts.js" />
       </list>
     </option>
   </component>
@@ -546,12 +537,6 @@
       <option name="number" value="Default" />
       <updated>1431620519789</updated>
     </task>
-    <task id="LOCAL-00091" summary="Add edit and view detail to Business view">
-      <created>1434446826421</created>
-      <option name="number" value="00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1434446826421</updated>
-    </task>
     <task id="LOCAL-00092" summary="Fix col-lg-4 layout">
       <created>1434454108573</created>
       <option name="number" value="00092" />
@@ -840,7 +825,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435115370223</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="change education view. show detail by modal">
+      <created>1435161841860</created>
+      <option name="number" value="00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1435161841860</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TodoView">
@@ -854,9 +845,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11056645" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11056645" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5096463" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883817" sideWeight="0.49346405" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883817" sideWeight="0.5087146" order="10" side_tool="true" content_ui="tabs" />
@@ -910,7 +901,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="add a guest login notification" />
     <MESSAGE value="hide console log" />
     <MESSAGE value="add https facebook picture" />
     <MESSAGE value="force ssl" />
@@ -935,7 +925,8 @@
     <MESSAGE value="fix user avatar not the same size" />
     <MESSAGE value="enlarge dashboard user avatar size" />
     <MESSAGE value="add bootstrap alert message and auto hide after 4 seconds" />
-    <option name="LAST_COMMIT_MESSAGE" value="add bootstrap alert message and auto hide after 4 seconds" />
+    <MESSAGE value="change education view. show detail by modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="change education view. show detail by modal" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1312,26 +1303,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
+    <entry file="file://$PROJECT_DIR$/styles/mycss.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.542373">
-          <caret line="359" column="52" selection-start-line="359" selection-start-column="43" selection-end-line="359" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.8082192">
+          <caret line="305" column="14" selection-start-line="305" selection-start-column="14" selection-end-line="305" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/modal-profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8758865">
-          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/mycss.css">
+    <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8082192">
-          <caret line="305" column="14" selection-start-line="305" selection-start-column="14" selection-end-line="305" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.23858447">
+          <caret line="359" column="58" selection-start-line="359" selection-start-column="58" selection-end-line="359" selection-end-column="58" />
           <folding />
         </state>
       </provider>

@@ -357,7 +357,8 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             users.then(function onSuccess(response) {
                 $scope.users = response.toJSON();
             });
-            var bodyRef = angular.element( $document[0].body );
+            //var bodyRef = angular.element( $document[0].body );
+            var bodyRef = angular.element(document.querySelector('#myModalcontent'));
             $scope.open = function (user) {
                 bodyRef.addClass('ovh');
 
