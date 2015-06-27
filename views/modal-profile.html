@@ -1,6 +1,7 @@
-<body id="myModalcontent"><div>
+<body id="myModalcontent" ng-controller="EduCtrl"><div>
   <div class="modal-header">
-    <h3 class="modal-title">個人檔案</h3>
+    <h3 class="modal-title">個人檔案<button class="btn pull-right btn-primary" ng-click="ok()">關閉視窗</button></h3>
+
   </div>
   <div class="row">
     <div class="modal-body">
@@ -37,7 +38,7 @@
     </div>
   </div>
   <div class="modal-footer">
-    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-primary btn-block" ng-click="ok()">關閉視窗</button>
   </div>
 </div>
 </body>

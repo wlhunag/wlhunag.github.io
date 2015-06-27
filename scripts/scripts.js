@@ -351,8 +351,8 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
         };
     })
 
-    .controller("EduCtrl", ["$scope", "Entry", "$modal","$document",
-        function ($scope, Entry, $modal, $document) {
+    .controller("EduCtrl", ["$scope", "Entry", "$modal",
+        function ($scope, Entry, $modal) {
             var users = Entry.get({id: "users"}).$promise;
             users.then(function onSuccess(response) {
                 $scope.users = response.toJSON();
