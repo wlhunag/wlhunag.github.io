@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="change education view. show detail by modal">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/modal-profile.html" afterPath="$PROJECT_DIR$/views/modal-profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/scripts.js" afterPath="$PROJECT_DIR$/scripts/scripts.js" />
+    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="try to figure out how to close modal when press back button.&#10;But not solved, rather , add another button on the top and enlarge the original button">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/education.html" afterPath="$PROJECT_DIR$/views/dashboard/education.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="self-reliance.iws" />
@@ -19,38 +18,18 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="C:\Users\Aaron\Dropbox\programming\Code\self-reliance" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.5188902">
-                    <caret line="478" column="14" selection-start-line="461" selection-start-column="12" selection-end-line="478" selection-end-column="14" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="self-reliance" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4896514">
+    <splitter split-orientation="horizontal" split-proportion="0.2578077">
       <split-first>
         <leaf>
           <file leaf-file-name="businessDetail.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-23.166666">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="42" column="96" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="96" />
                   <folding />
                 </state>
@@ -60,8 +39,8 @@
           <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="6181" column="52" selection-start-line="6181" selection-start-column="42" selection-end-line="6181" selection-end-column="52" />
+                <state vertical-scroll-proportion="-4.9491525">
+                  <caret line="7141" column="1" selection-start-line="7141" selection-start-column="1" selection-end-line="7141" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -80,7 +59,7 @@
           <file leaf-file-name="job.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/job.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="10" />
                   <folding />
                 </state>
@@ -90,8 +69,8 @@
           <file leaf-file-name="education.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/dashboard/education.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.20883977">
-                  <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+                <state vertical-scroll-proportion="0.4640884">
+                  <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
                   <folding>
                     <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
@@ -113,8 +92,8 @@
           <file leaf-file-name="mycss.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/mycss.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="305" column="14" selection-start-line="305" selection-start-column="14" selection-end-line="305" selection-end-column="14" />
+                <state vertical-scroll-proportion="-9.152542">
+                  <caret line="297" column="1" selection-start-line="297" selection-start-column="1" selection-end-line="297" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -133,7 +112,7 @@
           <file leaf-file-name="postnewjob.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/postnewjob.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-58.8">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
                   <folding>
                     <element signature="n#style#0;n#span#0;n#div#1;n#div#4;n#form#0;n#!!top" expanded="true" />
@@ -150,8 +129,8 @@
           <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-12.0">
-                  <caret line="382" column="19" selection-start-line="382" selection-start-column="19" selection-end-line="382" selection-end-column="19" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="372" column="25" selection-start-line="372" selection-start-column="25" selection-end-line="372" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -160,8 +139,8 @@
           <file leaf-file-name="modal-profile.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/modal-profile.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.20883977">
-                  <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -232,8 +211,8 @@
         <option value="$PROJECT_DIR$/views/dashboard/business.html" />
         <option value="$PROJECT_DIR$/styles/mycss.css" />
         <option value="$PROJECT_DIR$/scripts/ckeditor/config.js" />
-        <option value="$PROJECT_DIR$/views/dashboard/education.html" />
         <option value="$PROJECT_DIR$/scripts/scripts.js" />
+        <option value="$PROJECT_DIR$/views/dashboard/education.html" />
         <option value="$PROJECT_DIR$/views/modal-profile.html" />
       </list>
     </option>
@@ -336,7 +315,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -418,6 +396,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -601,12 +580,6 @@
       <created>1431620519789</created>
       <option name="number" value="Default" />
       <updated>1431620519789</updated>
-    </task>
-    <task id="LOCAL-00093" summary="add html5 mode">
-      <created>1434455611910</created>
-      <option name="number" value="00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1434455611910</updated>
     </task>
     <task id="LOCAL-00094" summary="add html5 mode">
       <created>1434455739625</created>
@@ -896,7 +869,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435162053667</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="try to figure out how to close modal when press back button.&#10;But not solved, rather , add another button on the top and enlarge the original button">
+      <created>1435418791005</created>
+      <option name="number" value="00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1435418791006</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TodoView">
@@ -912,7 +891,7 @@
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11056645" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11056645" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5096463" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883817" sideWeight="0.5087146" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -966,7 +945,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="hide console log" />
     <MESSAGE value="add https facebook picture" />
     <MESSAGE value="force ssl" />
     <MESSAGE value="Add local index file and change habits and wants to ng-list" />
@@ -991,7 +969,8 @@
     <MESSAGE value="enlarge dashboard user avatar size" />
     <MESSAGE value="add bootstrap alert message and auto hide after 4 seconds" />
     <MESSAGE value="change education view. show detail by modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="change education view. show detail by modal" />
+    <MESSAGE value="try to figure out how to close modal when press back button.&#10;But not solved, rather , add another button on the top and enlarge the original button" />
+    <option name="LAST_COMMIT_MESSAGE" value="try to figure out how to close modal when press back button.&#10;But not solved, rather , add another button on the top and enlarge the original button" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1255,14 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6181" column="52" selection-start-line="6181" selection-start-column="42" selection-end-line="6181" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/editprofile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.6144245">
@@ -1301,14 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/mycss.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="305" column="14" selection-start-line="305" selection-start-column="14" selection-end-line="305" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/job.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1319,12 +1282,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/postnewjob.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-58.8">
+        <state vertical-scroll-proportion="0.0">
           <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#1;n#div#4;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#5;n#form#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="96" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="96" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,26 +1307,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
+    <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.166666">
-          <caret line="42" column="96" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="96" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="372" column="25" selection-start-line="372" selection-start-column="25" selection-end-line="372" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
+    <entry file="file://$PROJECT_DIR$/styles/mycss.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.0">
-          <caret line="382" column="19" selection-start-line="382" selection-start-column="19" selection-end-line="382" selection-end-column="19" />
+        <state vertical-scroll-proportion="-9.152542">
+          <caret line="297" column="1" selection-start-line="297" selection-start-column="1" selection-end-line="297" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.9491525">
+          <caret line="7141" column="1" selection-start-line="7141" selection-start-column="1" selection-end-line="7141" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/education.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20883977">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.4640884">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
           <folding>
             <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
@@ -1365,8 +1344,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/modal-profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20883977">
-          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>
