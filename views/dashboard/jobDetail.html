@@ -1,11 +1,11 @@
 <div class="container-fluid"><h3>檢視職缺</h3><a ui-sref=job class="pull-right btn btn-primary btn-outline btn-rounded">Back
   to job</a>
 {{entry.idPoster |json}}
-  <div ng-if="!!entry.isPoster" ui-sref="editjobDetail({jobId: jobId})" type="button"
+  <div ng-if="!!isPoster" ui-sref="editjobDetail({jobId: jobId})" type="button"
        class="btn btn-rounded btn-outline btn-warning pull-right">
     <i class="glyphicon glyphicon-edit green"></i>編輯
   </div>
-  <div ng-if="!!entry.isPoster" ng-click="removeJob(jobId)" ui-sref="job" type="button"
+  <div ng-if="!!isPoster" ng-click="removeJob(jobId)" ui-sref="job" type="button"
        class="btn btn-rounded btn-outline btn-danger pull-right">
     <i class="glyphicon glyphicon-trash"></i>刪除
   </div>

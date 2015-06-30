@@ -408,12 +408,12 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                 .then(function() {
                     //console.log($scope.entry);
                     try {if ($scope.authData.uid == $scope.entry.posterId)  {
-                        $scope.entry.isPoster = true;
-                        console.log("isPoster: "+$scope.entry.isPoster);
+                        $scope.isPoster = true;
+                        console.log("isPoster: "+$scope.isPoster);
                     }}
                     catch (err){
                         console.log("Not login");
-                        $scope.entry.isPoster = false;
+                        $scope.isPoster = false;
                     }
 
                 })
@@ -508,7 +508,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                 .then(function() {
                     console.log($scope.entry);
                     if ($scope.authData == $scope.entry.posterId)  {
-                        $scope.entry.isPoster = true;
+                        $scope.isPoster = true;
                     }
                 })
                 .catch(function(err) {
@@ -680,8 +680,11 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             $scope.rentry.$loaded()
                 .then(function() {
                     console.log($scope.entry);
-                    if ($scope.authData == $scope.entry.posterId)  {
-                        $scope.entry.isPoster = true;
+                    console.warn($scope.authData);
+                    console.warn($scope.entry.posterId);
+                    if ($scope.authData === $scope.entry.posterId)  {
+                        console.log("$scope.authData === $scope.entry.posterId");
+                        $scope.isPoster = true;
                     }
                 })
                 .catch(function(err) {
@@ -778,7 +781,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                 .then(function() {
                     console.log($scope.entry);
                     if ($scope.authData == $scope.entry.posterId)  {
-                        $scope.entry.isPoster = true;
+                        $scope.isPoster = true;
                     }
                 })
                 .catch(function(err) {
