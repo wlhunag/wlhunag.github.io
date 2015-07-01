@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="modify login page">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/profileDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/education.html" afterPath="$PROJECT_DIR$/views/dashboard/education.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/modal-profile.html" afterPath="$PROJECT_DIR$/views/modal-profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/scripts.js" afterPath="$PROJECT_DIR$/scripts/scripts.js" />
+    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="workaround for the android back button to close bootstrap modal.&#10;Just not to use modal when using mobile device.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/profileDetail.html" afterPath="$PROJECT_DIR$/views/profileDetail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="self-reliance.iws" />
@@ -64,7 +61,7 @@
     <favorites_list name="self-reliance" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.51635665">
+    <splitter split-orientation="horizontal" split-proportion="0.81270045">
       <split-first>
         <leaf>
           <file leaf-file-name="businessDetail.html" pinned="false" current-in-tab="false">
@@ -89,11 +86,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="education.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="education.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/education.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.44309393">
-                  <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+                <state vertical-scroll-proportion="-5.6666665">
+                  <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
                   <folding>
                     <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
@@ -162,11 +159,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="profileDetail.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="profileDetail.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/profileDetail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-17.5">
-                  <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+                <state vertical-scroll-proportion="0.20883977">
+                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -263,8 +260,8 @@
         <option value="$PROJECT_DIR$/views/modal-profile.html" />
         <option value="$PROJECT_DIR$/views/profile.html" />
         <option value="$PROJECT_DIR$/scripts/scripts.js" />
-        <option value="$PROJECT_DIR$/views/profileDetail.html" />
         <option value="$PROJECT_DIR$/views/dashboard/education.html" />
+        <option value="$PROJECT_DIR$/views/profileDetail.html" />
       </list>
     </option>
   </component>
@@ -632,12 +629,6 @@
       <option name="number" value="Default" />
       <updated>1431620519789</updated>
     </task>
-    <task id="LOCAL-00098" summary="shrink logout btn, hide sidebar scroll">
-      <created>1434460489754</created>
-      <option name="number" value="00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1434460489754</updated>
-    </task>
     <task id="LOCAL-00099" summary="Add comments to JobDetail and BusinessDetail view">
       <created>1434533483827</created>
       <option name="number" value="00099" />
@@ -926,7 +917,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435671779848</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="workaround for the android back button to close bootstrap modal.&#10;Just not to use modal when using mobile device.">
+      <created>1435724784687</created>
+      <option name="number" value="00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1435724784688</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TodoView">
@@ -944,6 +941,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15087146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5096463" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883817" sideWeight="0.49346405" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883817" sideWeight="0.5087146" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32780084" sideWeight="0.4912854" order="8" side_tool="false" content_ui="tabs" />
@@ -953,7 +951,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.2126556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1963" y="492" width="922" height="641" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883817" sideWeight="0.49346405" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -996,7 +993,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="improved performance by changing ng-show to ng-if" />
     <MESSAGE value="fail to rebuild the login flow, so keep it as is.&#10;Add a avatar for anonymous login" />
     <MESSAGE value="rebuild login workflow, so doesn't need to login to view jobs" />
     <MESSAGE value="remove ng-show for job remover, and use ng-if instead." />
@@ -1021,7 +1017,8 @@
     <MESSAGE value="x-frame option" />
     <MESSAGE value="bug fix: update isPoster if condition&#10;" />
     <MESSAGE value="modify login page" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify login page" />
+    <MESSAGE value="workaround for the android back button to close bootstrap modal.&#10;Just not to use modal when using mobile device." />
+    <option name="LAST_COMMIT_MESSAGE" value="workaround for the android back button to close bootstrap modal.&#10;Just not to use modal when using mobile device." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1371,14 +1368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/profileDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.5">
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.6">
@@ -1387,10 +1376,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16470589">
+          <caret line="283" column="57" selection-start-line="283" selection-start-column="57" selection-end-line="283" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/education.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44309393">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        <state vertical-scroll-proportion="-5.6666665">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
@@ -1398,10 +1395,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
+    <entry file="file://$PROJECT_DIR$/views/profileDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16470589">
-          <caret line="283" column="57" selection-start-line="283" selection-start-column="57" selection-end-line="283" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.20883977">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
