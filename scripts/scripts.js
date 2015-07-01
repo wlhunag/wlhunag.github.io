@@ -21,6 +21,14 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                     templateUrl: "views/profile.html",
                     controller: "ProfileCtrl"
                 })
+
+                .state("profileDetail", {
+                    url: "/profiledetail/:proId",
+                    parent: "dashboard",
+                    templateUrl: "views/profileDetail.html",
+                    controller: "ProfileDetailCtrl"
+                })
+
                 .state("editprofile", {
                     url: "/editprofile",
                     parent: "dashboard",
@@ -329,6 +337,16 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             };
         }])
 
+    .controller("ProfileDetailCtrl", ["$scope", "Entry", "$modal", "$stateParams",
+        function ($scope, Entry, $modal, $stateParams) {
+            console.log( $stateParams.proId);
+            var users = Entry.get({id: "users/"+ $stateParams.proId}).$promise;
+            users.then(function onSuccess(response) {
+                $scope.user = response.toJSON();
+                console.log( $stateParams.proId);
+            });
+
+        }])
 
     .directive('ckEditor', function() {
         return {
@@ -388,7 +406,6 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
     .controller('ModalInstanceCtrl', function ($scope, $modalInstance, user) {
 
         $scope.user = user;
-
         $scope.ok = function () {
             $modalInstance.close();
         };

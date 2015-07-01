@@ -1,11 +1,10 @@
-<body id="myModalcontent" ng-controller="EduCtrl"><div>
-  <div class="modal-header">
-    <h3 class="modal-title">個人檔案<button class="btn pull-right btn-primary" ng-click="ok()">關閉視窗</button></h3>
+<div><a ui-sref=education class="pull-right btn btn-primary btn-outline btn-rounded">返回才能</a>
 
-  </div>
   <div class="row">
-    <div class="modal-body">
-    <div class='container'><h1 class="text-center">{{ user.name}}</h1>
+    <h2>個人檔案</h2>
+
+    <div class='container col-sm-12' ng-hide="user.job"  ui-sref=editprofile><h1 class=" btn btn-block btn-lg btn-primary btn-outline btn-rounded text-center">還沒有自我介紹，趕快來寫吧<i class="fa fa-pencil"></i></h1></div>
+    <div class='container' ng-show="user.job"><h1 class="text-center">{{ user.name}}</h1>
 
       <p><span class="btn btn-success"><i class="fa fa-briefcase pull-left"></i>&nbsp;職業</span>
        {{ user.job}}</p>
@@ -35,10 +34,5 @@
       <p></p></p>
       </p>
     </div>
-    </div>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-primary btn-block" ng-click="ok()">關閉視窗</button>
   </div>
 </div>
-</body>
