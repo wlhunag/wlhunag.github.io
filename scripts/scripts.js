@@ -174,7 +174,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             };
 
             function addUserdata(authData) {
-                console.log(authData);
+                //console.log(authData);
 
                 if (authData && authData.provider == "facebook") {
                     console.log("User " + authData.uid + " is logged in with " + authData.provider);
