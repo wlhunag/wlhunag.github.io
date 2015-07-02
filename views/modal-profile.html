@@ -28,12 +28,9 @@
       </div>
       <p></p></p>
 
-      <p><span class="btn btn-success"><i class="glyphicon glyphicon-globe"></i> &nbsp;我的網站</span>
-      <p style="padding-left: 30px" ng-repeat="url in user.urls">
-        <span><a ng-href="{{url.url}}" target="_blank">{{url.name}}</a></span>
-
-      <p></p></p>
-      </p>
+      <span class="btn btn-success"><i class="glyphicon glyphicon-globe"></i> &nbsp;我的網站</span>
+      <span class="btn-group linktag" ng-repeat="url in user.urls">
+        <a class="btn btn-info" ng-href="{{url.url}}" target="_blank">{{url.name}}</a></span>
     </div>
     </div>
   </div>
