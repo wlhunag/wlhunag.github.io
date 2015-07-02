@@ -173,13 +173,13 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             };
 
             function addUserdata(authData) {
-                //console.log(authData);
+                console.log(authData);
 
                 if (authData && authData.provider == "facebook") {
                     console.log("User " + authData.uid + " is logged in with " + authData.provider);
-                    delete authData.expires;
+                    //delete authData.expires;
                     delete authData.auth;
-                    delete authData.facebook.accessToken;
+                    //delete authData.facebook.accessToken;
                     delete authData.facebook.cachedUserProfile.picture;
                     delete authData.token;
                     $scope.authdata = authData;
@@ -196,9 +196,9 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                     });
                 } else if (authData && authData.provider == "google") {
                     console.log("User " + authData.uid + " is logged in with " + authData.provider);
-                    delete authData.expires;
+                    //delete authData.expires;
                     delete authData.auth;
-                    delete authData.google.accessToken;
+                    //delete authData.google.accessToken;
                     delete authData.token;
                     $scope.authdata = authData;
                     $scope.authdata.picture = authData.google.cachedUserProfile.picture;
