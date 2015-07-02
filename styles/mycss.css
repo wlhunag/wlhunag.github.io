@@ -306,3 +306,16 @@ span.tags
 .modal-content {
     overflow-y:auto;
 }
+
+.linktag {
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.44);
+    font-size: 13px;
+    letter-spacing: 0;
+    text-transform: none;
+    background: #FAFAFA;
+    border-radius: 2px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+}

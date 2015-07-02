@@ -13,8 +13,8 @@
       <div class="jumbotron"  ng-bind-html="user.introduction | to_trusted"></div>
       </p>
 
-      <p><span class="btn btn-success"><i class="fa fa-heart"></i> &nbsp;興趣</span><span class="btn-group" ng-repeat="habit in user.habits"><button class="btn btn-default">{{habit}}</button></span></p>
-      <p><span class="btn btn-success"><i class="fa fa-paint-brush"></i> &nbsp;我想學</span><span class="btn-group" ng-repeat="want in user.wants"><button class="btn btn-default">{{want}}</button></span> </p>
+      <p><span class="btn linktag btn-success"><i class="fa fa-heart"></i> &nbsp;興趣</span><span class="btn-group" ng-repeat="habit in user.habits"><button class="btn btn-default">{{habit}}</button></span></p>
+      <p><span class="btn linktag btn-success"><i class="fa fa-paint-brush"></i> &nbsp;我想學</span><span class="btn-group" ng-repeat="want in user.wants"><button class="btn btn-default">{{want}}</button></span> </p>
 
       <p><span class="btn btn-success"><i class="glyphicon glyphicon-thumbs-up"></i> &nbsp;才能</span></p>
       <div class="jumbotron">
