@@ -1,6 +1,7 @@
 <script src="scripts/ckeditor/ckeditor.js"></script>
 <script> CKEDITOR.env.isCompatible = true;</script>
-<h2><i class="fa fa-comments"></i>新專案</h2>
+<view-title>編輯專案</view-title>
+<h2><i class="fa fa-comments"></i>編輯專案</h2>
 <div ng-show="entry.title && entry.explanation && entry.img" ng-click="submit()"
      class="pull-right btn btn-success btn-lg" ui-sref="business">
   <i class="fa fa-pencil-square-o"></i>儲存專案
@@ -18,7 +19,7 @@
       <img ng-src="{{entry.img}}" style="max-height: 80px;max-width: 80px;"/>
     </div>
   </div>
-     <textarea ck-editor ng-model="entry.explanation" name="editor1" id="editor1" rows="20" cols="80"></textarea>
+     <textarea ck-editor ng-model="entry.explanation" name="editor1" id="editor1" rows="40" cols="80"></textarea>
   <p class="help-block">請盡可能的清楚描述您的想法，可附圖、連結、影片等等，編輯區的右下角可調整大小</p>
 
 </form>

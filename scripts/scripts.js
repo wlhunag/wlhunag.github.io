@@ -1,5 +1,5 @@
 "use strict";
-angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xeditable", "ui.bootstrap"])
+angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xeditable", "ui.bootstrap", "viewhead"])
 
     .config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.when("/dashboard", "/dashboard/job"),
@@ -106,6 +106,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                     controller: "editBusCtrl"
                 })
     }])
+
 
     .factory('Entry', function ($resource) {
         return $resource('https://amber-heat-6612.firebaseio.com/:id.json'); // Note the full endpoint address

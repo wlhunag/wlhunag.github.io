@@ -1,5 +1,6 @@
 <script src="scripts/ckeditor/ckeditor.js"></script>
 <script> CKEDITOR.env.isCompatible = true;</script>
+<view-title>編輯 {{entry.title}}</view-title>
 <form id="new-job" name="entryform" novalidate="" ng-class="{'needfix':needfix}" class="ng-pristine ng-invalid ng-invalid-required">
     <h3><i class="glyphicon glyphicon-edit green"></i> 編輯職缺</h3>
     <a  ng-click="submit()"   class="btn btn-success btn-lg btn-outline btn-rounded pull-right">

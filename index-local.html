@@ -1,8 +1,8 @@
 <!doctype html>
-<html class=no-js>
+<html class=no-js ng-app=yapp>
 <head>
   <meta charset=utf-8>
-  <title>千里馬</title>
+  <title ng-bind-template="{{viewTitle}} | 千里馬">千里馬</title>
   <script>
     var host = "wlhunag.github.io";
     if ((host == window.location.host) && (window.location.protocol != "https:"))
@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="styles/xeditable.css"/>
   <link rel="shortcut icon" href="favicon.ico"/>
 </head>
-<body ng-app=yapp>
+<body>
 <div>
   <div ui-view=""></div>
 </div>
@@ -39,6 +39,7 @@
 <script src="scripts/angular-resource.js"></script>
 <script src="scripts/angular-ui-router.js"></script>
 <script src="scripts/ui-bootstrap-tpls.js"></script>
+<script src="scripts/angularjs-viewhead.js"></script>
 <script src="scripts/angular-animate.js"></script>
 <script src="scripts/bootstrap.js"></script>
 <script src="scripts/xeditable.js"></script>
