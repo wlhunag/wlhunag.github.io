@@ -307,6 +307,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             $scope.urls = $firebaseArray(unref);
 
             console.log($scope.talents);
+
             $scope.addTalent = function () {
                 console.log("Start to add talents");
                 console.log($scope.talents);
@@ -544,7 +545,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             };
         }])
 
-    .controller("newJobCtrl", ["$scope", "$firebaseArray", "$location", "Auth", function ($scope, $firebaseArray, $location,Auth) {
+    .controller("newJobCtrl", ["$scope", "$firebaseArray", "$location", "Auth","$http", function ($scope, $firebaseArray, $location,Auth, $http) {
         var ref = new Firebase("https://amber-heat-6612.firebaseio.com/jobs");
         $scope.jobtypes = jobtypes;
         //$scope.needfix = false;
@@ -602,6 +603,17 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             delete $scope.newjob.jobtype.jobs;
             //console.log($scope.newjob.jobtype);
             $scope.njobs.$add($scope.newjob);
+            $http.get('http://wlhunagmail-995.appspot.com/send').
+                success(function(data, status, headers, config) {
+                    console.log("Mail send");
+                    // this callback will be called asynchronously
+                    // when the response is available
+                }).
+                error(function(data, status, headers, config) {
+                    console.warn("Mail NOT send");
+                    // called asynchronously if an error occurs
+                    // or server returns response with an error status.
+                });
             console.log("job added");
             return $location.path("/job"), !1
         };
@@ -610,7 +622,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
 
 
 
-    .controller('newBusCtrl', ["$scope", "$firebaseArray", "$location", "Auth", function ($scope, $firebaseArray, $location,Auth) {
+    .controller('newBusCtrl', ["$scope", "$firebaseArray", "$location", "Auth","$http", function ($scope, $firebaseArray, $location,Auth, $http) {
         var ref = new Firebase("https://amber-heat-6612.firebaseio.com/businesses");
         $scope.bus = $firebaseArray(ref);
         $scope.newbus= new Object;
@@ -652,7 +664,17 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             var now = new Date().getTime();
             $scope.newbus.time = now;
             console.dir($scope.newbus)
-
+            $http.get('http://wlhunagmail-995.appspot.com/send').
+                success(function(data, status, headers, config) {
+                    console.log("Mail send");
+                    // this callback will be called asynchronously
+                    // when the response is available
+                }).
+                error(function(data, status, headers, config) {
+                    console.warn("Mail NOT send");
+                    // called asynchronously if an error occurs
+                    // or server returns response with an error status.
+                });
             $scope.bus.$add($scope.newbus);
             console.log("New business added");
             return $location.path("/business"), !1
