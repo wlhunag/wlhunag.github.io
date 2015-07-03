@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="add title to every page">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/business.html" afterPath="$PROJECT_DIR$/views/dashboard/business.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/editjobDetail.html" afterPath="$PROJECT_DIR$/views/dashboard/editjobDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/editprofile.html" afterPath="$PROJECT_DIR$/views/editprofile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/jobDetail.html" afterPath="$PROJECT_DIR$/views/dashboard/jobDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/newbusiness.html" afterPath="$PROJECT_DIR$/views/dashboard/newbusiness.html" />
+    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="add 用滑鼠拖曳編輯區右下角的三角形◢可調整大小">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/businessDetail.html" afterPath="$PROJECT_DIR$/views/dashboard/businessDetail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="self-reliance.iws" />
@@ -27,7 +23,7 @@
     <favorites_list name="self-reliance" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4869281">
+    <splitter split-orientation="horizontal" split-proportion="0.7461874">
       <split-first>
         <leaf>
           <file leaf-file-name="editbusiness.html" pinned="false" current-in-tab="false">
@@ -90,12 +86,29 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="jobDetail.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="jobDetail.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/jobDetail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.1370165">
-                  <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+                <state vertical-scroll-proportion="-7.0">
+                  <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="businessDetail.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.67292815">
+                  <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+                  <folding>
+                    <element signature="n#style#0;n#img#0;n#span#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -181,7 +194,6 @@
         <option value="$PROJECT_DIR$/views/modal-profile.html" />
         <option value="$PROJECT_DIR$/views/profile.html" />
         <option value="$PROJECT_DIR$/views/profileDetail.html" />
-        <option value="$PROJECT_DIR$/views/dashboard/businessDetail.html" />
         <option value="$PROJECT_DIR$/views/dashboard/education.html" />
         <option value="$PROJECT_DIR$/views/dashboard/postnewjob.html" />
         <option value="$PROJECT_DIR$/index-local.html" />
@@ -193,6 +205,7 @@
         <option value="$PROJECT_DIR$/views/dashboard/editjobDetail.html" />
         <option value="$PROJECT_DIR$/views/dashboard/newbusiness.html" />
         <option value="$PROJECT_DIR$/views/editprofile.html" />
+        <option value="$PROJECT_DIR$/views/dashboard/businessDetail.html" />
       </list>
     </option>
   </component>
@@ -282,7 +295,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -293,122 +306,7 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="self-reliance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="self-reliance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wlhunag.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="self-reliance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wlhunag.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="self-reliance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wlhunag.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="self-reliance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wlhunag.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="self-reliance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wlhunag.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="self-reliance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wlhunag.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckeditor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="self-reliance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wlhunag.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/index-local.html" />
@@ -591,12 +489,6 @@
       <created>1431620519789</created>
       <option name="number" value="Default" />
       <updated>1431620519789</updated>
-    </task>
-    <task id="LOCAL-00105" summary="fix img in business detail out of screen">
-      <created>1434551718302</created>
-      <option name="number" value="00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1434551718302</updated>
     </task>
     <task id="LOCAL-00106" summary="fix Google user image">
       <created>1434591910475</created>
@@ -886,7 +778,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435851640723</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="add 用滑鼠拖曳編輯區右下角的三角形◢可調整大小">
+      <created>1435907276064</created>
+      <option name="number" value="00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1435907276064</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TodoView">
@@ -904,6 +802,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15087146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5096463" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883817" sideWeight="0.49346405" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883817" sideWeight="0.5087146" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32780084" sideWeight="0.4912854" order="8" side_tool="false" content_ui="tabs" />
@@ -913,7 +812,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.2126556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1963" y="492" width="922" height="641" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883817" sideWeight="0.49346405" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -956,7 +854,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="update readme" />
     <MESSAGE value="add sitemap" />
     <MESSAGE value="update sitemap" />
     <MESSAGE value="update website url" />
@@ -981,7 +878,8 @@
     <MESSAGE value="undelete accesstoken" />
     <MESSAGE value="add some space for habits" />
     <MESSAGE value="add title to every page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add title to every page" />
+    <MESSAGE value="add 用滑鼠拖曳編輯區右下角的三角形◢可調整大小" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 用滑鼠拖曳編輯區右下角的三角形◢可調整大小" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1191,6 +1089,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.084746">
           <caret line="242" column="23" selection-start-line="242" selection-start-column="23" selection-end-line="242" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,6 +1097,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.0">
           <caret line="318" column="15" selection-start-line="318" selection-start-column="15" selection-end-line="318" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,13 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/job.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1242,8 +1135,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1355,9 +1248,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/jobDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1370165">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67292815">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#span#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -10,22 +10,24 @@
        class="btn btn-rounded btn-outline btn-danger pull-right">
     <i class="glyphicon glyphicon-trash"></i>刪除
   </div>
+  <div class="col-lg-6 col-lg-offset-6 col-xs-8 col-xs-offset-4">   </div>
   <form name="myForm" novalidate>
     <div class="row">
       <h4 class="btn btn-lg btn-info">{{ entry.title }}
       </h4>
       <img ng-src="{{entry.img}}" style="max-height: 80px;max-width: 80px;"/>
+     <span class="pull-right"> <strong>&nbsp;張貼者</strong>&nbsp;&nbsp;
+      <img ng-src="{{ entry.posterPicture}}" style="max-height:50px;max-width: 50px">&nbsp;{{ entry.poster}}
+      <span>&nbsp;&nbsp; {{entry.edittime || entry.time | date:'yyyy-MM-dd HH:mm'}}</span></span>
     </div>
     <div class="col-xs-12 col-md-12 col-lg-12 jumbotron"><p id="setimg" ng-bind-html="entry.explanation | to_trusted"></p></div>
 
     <hr>
 
- <div class="row"><div class="col-lg-6 col-lg-offset-6 col-xs-8 col-xs-offset-4">   <strong>&nbsp;張貼者</strong>&nbsp;&nbsp;
-    <img ng-src="{{ entry.posterPicture}}" style="max-height:50px;max-width: 50px">&nbsp;{{ entry.poster}}
-    <span>&nbsp;&nbsp; {{entry.edittime || entry.time | date:'yyyy-MM-dd HH:mm'}}</span></div></div>
+
   </form>
   <hr/>
-  <div class="comment">
+  <div class="row container-fluid"><div class="comment">
     <div ng-repeat="comment in comments track by $index">
       <img class="pic" ng-src="{{ comment.picture}}" style="max-height:70px;max-width: 60px; padding-right: 8px">
       <strong class="text-primary">{{ comment.from }}</strong>
@@ -44,5 +46,5 @@
       <input style="width:80%;height: 50px;" ng-model="comment" ng-keydown="addComments($event)" type="text"
              id="messageInput" row="3" placeholder="留言...">
     </div>
-  </div>
+  </div></div>
 </div>
