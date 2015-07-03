@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="add 用滑鼠拖曳編輯區右下角的三角形◢可調整大小">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/businessDetail.html" afterPath="$PROJECT_DIR$/views/dashboard/businessDetail.html" />
+    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="change the poster position of bussiness detail">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/editbusiness.html" afterPath="$PROJECT_DIR$/views/dashboard/editbusiness.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="self-reliance.iws" />
@@ -26,11 +26,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.7461874">
       <split-first>
         <leaf>
-          <file leaf-file-name="editbusiness.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="editbusiness.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/dashboard/editbusiness.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-15.4">
-                  <caret line="22" column="66" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="66" />
+                <state vertical-scroll-proportion="0.5104972">
+                  <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
                   <folding />
                 </state>
               </provider>
@@ -96,11 +96,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="businessDetail.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="businessDetail.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.67292815">
-                  <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+                <state vertical-scroll-proportion="-5.6">
+                  <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
                   <folding>
                     <element signature="n#style#0;n#img#0;n#span#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
@@ -197,7 +197,6 @@
         <option value="$PROJECT_DIR$/views/dashboard/education.html" />
         <option value="$PROJECT_DIR$/views/dashboard/postnewjob.html" />
         <option value="$PROJECT_DIR$/index-local.html" />
-        <option value="$PROJECT_DIR$/views/dashboard/editbusiness.html" />
         <option value="$PROJECT_DIR$/scripts/scripts.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/views/dashboard/business.html" />
@@ -206,6 +205,7 @@
         <option value="$PROJECT_DIR$/views/dashboard/newbusiness.html" />
         <option value="$PROJECT_DIR$/views/editprofile.html" />
         <option value="$PROJECT_DIR$/views/dashboard/businessDetail.html" />
+        <option value="$PROJECT_DIR$/views/dashboard/editbusiness.html" />
       </list>
     </option>
   </component>
@@ -489,12 +489,6 @@
       <created>1431620519789</created>
       <option name="number" value="Default" />
       <updated>1431620519789</updated>
-    </task>
-    <task id="LOCAL-00106" summary="fix Google user image">
-      <created>1434591910475</created>
-      <option name="number" value="00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1434591910475</updated>
     </task>
     <task id="LOCAL-00107" summary="count log time">
       <created>1434616885955</created>
@@ -784,7 +778,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435907276064</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="change the poster position of bussiness detail">
+      <created>1435908114650</created>
+      <option name="number" value="00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1435908114650</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TodoView">
@@ -854,7 +854,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="add sitemap" />
     <MESSAGE value="update sitemap" />
     <MESSAGE value="update website url" />
     <MESSAGE value="fix guest user edit and delete function" />
@@ -879,7 +878,8 @@
     <MESSAGE value="add some space for habits" />
     <MESSAGE value="add title to every page" />
     <MESSAGE value="add 用滑鼠拖曳編輯區右下角的三角形◢可調整大小" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 用滑鼠拖曳編輯區右下角的三角形◢可調整大小" />
+    <MESSAGE value="change the poster position of bussiness detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="change the poster position of bussiness detail" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1206,14 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard/editbusiness.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.4">
-          <caret line="22" column="66" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/editjobDetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.137931">
@@ -1256,8 +1248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard/businessDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67292815">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        <state vertical-scroll-proportion="-5.6">
+          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
           <folding>
             <element signature="n#style#0;n#img#0;n#span#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
@@ -1266,6 +1258,14 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard/editbusiness.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5104972">
+          <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
