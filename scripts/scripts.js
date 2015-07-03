@@ -603,7 +603,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             delete $scope.newjob.jobtype.jobs;
             //console.log($scope.newjob.jobtype);
             $scope.njobs.$add($scope.newjob);
-            $http.get('http://wlhunagmail-995.appspot.com/send').
+            $http.get('https://wlhunagmail-995.appspot.com/send').
                 success(function(data, status, headers, config) {
                     console.log("Mail send");
                     // this callback will be called asynchronously
@@ -664,7 +664,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             var now = new Date().getTime();
             $scope.newbus.time = now;
             console.dir($scope.newbus)
-            $http.get('http://wlhunagmail-995.appspot.com/send').
+            $http.get('https://wlhunagmail-995.appspot.com/send').
                 success(function(data, status, headers, config) {
                     console.log("Mail send");
                     // this callback will be called asynchronously

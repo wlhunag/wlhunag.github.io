@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="wrap text around image">
+    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="add basic send mail">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/scripts.js" afterPath="$PROJECT_DIR$/scripts/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -148,8 +148,8 @@
           <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.21347032">
-                  <caret line="309" column="12" selection-start-line="309" selection-start-column="12" selection-end-line="309" selection-end-column="12" />
+                <state vertical-scroll-proportion="0.33333334">
+                  <caret line="666" column="28" selection-start-line="666" selection-start-column="28" selection-end-line="666" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -518,12 +518,6 @@
       <option name="number" value="Default" />
       <updated>1431620519789</updated>
     </task>
-    <task id="LOCAL-00113" summary="add https facebook picture">
-      <created>1434621387224</created>
-      <option name="number" value="00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1434621387224</updated>
-    </task>
     <task id="LOCAL-00114" summary="force ssl">
       <created>1434621745679</created>
       <option name="number" value="00114" />
@@ -812,7 +806,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435914266917</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="add basic send mail">
+      <created>1435922173716</created>
+      <option name="number" value="00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1435922173716</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TodoView">
@@ -882,7 +882,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="modify job description cut length" />
     <MESSAGE value="add some space" />
     <MESSAGE value="overflow x auto" />
     <MESSAGE value="fix bug" />
@@ -907,7 +906,8 @@
     <MESSAGE value="logout nav bar toggle hide" />
     <MESSAGE value="add 返回才能 button at bottom" />
     <MESSAGE value="wrap text around image" />
-    <option name="LAST_COMMIT_MESSAGE" value="wrap text around image" />
+    <MESSAGE value="add basic send mail" />
+    <option name="LAST_COMMIT_MESSAGE" value="add basic send mail" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1301,8 +1301,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21347032">
-          <caret line="309" column="12" selection-start-line="309" selection-start-column="12" selection-end-line="309" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="666" column="28" selection-start-line="666" selection-start-column="28" selection-end-line="666" selection-end-column="28" />
           <folding />
         </state>
       </provider>
