@@ -115,12 +115,15 @@
       </div>
     </div>
   </div>
-
+</div>
 </div>
 <script>
   $(document).ready(function () {
     $("#success-alert").fadeTo(4000, 1000).slideUp(1500, function () {
       $("#success-alert").alert('close');
     });
+  });
+  $(function () {
+    CKEDITOR.config.height = 400;
   });
 </script>

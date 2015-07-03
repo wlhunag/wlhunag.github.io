@@ -1,5 +1,8 @@
 <script src="scripts/ckeditor/ckeditor.js"></script>
-<script> CKEDITOR.env.isCompatible = true;</script>
+<script> CKEDITOR.env.isCompatible = true;
+$(function () {
+  CKEDITOR.config.height = 600;
+});</script>
 <view-title>編輯專案</view-title>
 <h2><i class="fa fa-comments"></i>編輯專案</h2>
 <div ng-show="entry.title && entry.explanation && entry.img" ng-click="submit()"

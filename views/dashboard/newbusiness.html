@@ -1,5 +1,6 @@
 <script src="scripts/ckeditor/ckeditor.js"></script>
-<script> CKEDITOR.env.isCompatible = true;</script>
+<script> CKEDITOR.env.isCompatible = true;
+</script>
 <view-title>新專案</view-title>
 <h2><i class="fa fa-comments"></i>新專案</h2>
 <div ng-show="newbus.title && newbus.explanation && newbus.img" ng-click="submit()" class="pull-right btn btn-success btn-lg" ui-sref="business">
@@ -24,3 +25,8 @@
   <p class="help-block">請盡可能的清楚描述您的想法，可附圖、連結、影片等等，用滑鼠拖曳編輯區右下角的三角形◢可調整大小</p>
 
 </form>
+<script type="text/javascript">
+  $(function () {
+    CKEDITOR.config.height = 400;
+  });
+</script>
