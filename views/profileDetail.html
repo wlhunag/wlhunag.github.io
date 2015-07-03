@@ -4,7 +4,7 @@
   <div class="row">
     <h2>個人檔案</h2>
 
-    <div class='container' ng-show="user.job"><h1 class="text-center">{{ user.name}}</h1>
+    <div class='container'"><h1 class="text-center">{{ user.name}}</h1>
 
       <p><span class="btn btn-success"><i class="fa fa-briefcase pull-left"></i>&nbsp;職業</span>
        {{ user.job}}</p>
@@ -31,5 +31,10 @@
       <span class="btn-group linktag" ng-repeat="url in user.urls">
         <a class="btn btn-info" ng-href="{{url.url}}" target="_blank">{{url.name}}</a></span>
     </div>
+
   </div>
 </div>
+<hr/>
+<footer>
+  <button  ui-sref=education  class="btn btn-primary btn-outline  btn-rounded btn-block">返回才能</button>
+</footer>
