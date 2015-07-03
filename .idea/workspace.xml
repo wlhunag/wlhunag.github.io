@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="logout nav bar toggle hide">
+    <list default="true" id="a18b4c4e-c925-4ade-b15a-fc0838f6e38b" name="Default" comment="add 返回才能 button at bottom">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/profileDetail.html" afterPath="$PROJECT_DIR$/views/profileDetail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -99,8 +99,8 @@
           <file leaf-file-name="profileDetail.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/profileDetail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8353591">
-                  <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.13922653">
+                  <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -483,12 +483,6 @@
       <option name="number" value="Default" />
       <updated>1431620519789</updated>
     </task>
-    <task id="LOCAL-00110" summary="hide console log">
-      <created>1434618519080</created>
-      <option name="number" value="00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1434618519080</updated>
-    </task>
     <task id="LOCAL-00111" summary="add https facebook picture">
       <created>1434620998110</created>
       <option name="number" value="00111" />
@@ -777,7 +771,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435911043360</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="add 返回才能 button at bottom">
+      <created>1435912336958</created>
+      <option name="number" value="00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1435912336958</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TodoView">
@@ -847,7 +847,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="fix guest user edit and delete function" />
     <MESSAGE value="update editor to ckeditor" />
     <MESSAGE value="modify job description cut length" />
     <MESSAGE value="add some space" />
@@ -872,7 +871,8 @@
     <MESSAGE value="change the poster position of bussiness detail" />
     <MESSAGE value="change ckeditor height" />
     <MESSAGE value="logout nav bar toggle hide" />
-    <option name="LAST_COMMIT_MESSAGE" value="logout nav bar toggle hide" />
+    <MESSAGE value="add 返回才能 button at bottom" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 返回才能 button at bottom" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1261,8 +1261,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/profileDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8353591">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.13922653">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
           <folding />
         </state>
       </provider>
