@@ -67,9 +67,9 @@
             <li><a ui-sref=profile class="text-right"><span class="glyphicon glyphicon-user pull-right"></span>個人檔案&nbsp;&nbsp;</a></li>
             <li class="footer"><a class="text-right" href="https://github.com/wlhunag/wlhunag.github.io/blob/master/README.md" target="_blank">關於本網站&nbsp;&nbsp;<i class="fa fa-cog fa-spin pull-right"></i></a></li>
             <li class="divider"></li>
-            <li><a ng-click="logout()" ui-sref=login class="btn btn-white btn-outline btn-rounded btn-lg">登出</a>
-            </li>
-          </ul>
+            <!--<li><a ng-click="logout()" ui-sref=login class="btn btn-white btn-outline btn-rounded btn-lg">登出</a></li>-->
+            <li><a ng-if="authData.uid" ng-click="logout()" class="btn btn-white btn-outline btn-rounded">登出</a></li>
+            <li><a ng-if="!authData.uid" ng-click="login()" ui-sref=login class="btn btn-white btn-outline btn-rounded">登入</a></li>          </ul>
         </div>
         <!-- /.navbar-collapse -->
       </div>

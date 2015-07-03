@@ -48,7 +48,7 @@
           <td class=" text-success">{{ job.company }}</td>
           <td>{{ job.salary1|currency:limitTo:0}} - {{ job.salary2 |currency: limitTo:0}}</td>
           <td ng-if="user.isAdmin"><a ng-click="jobs.$remove(job)"><span
-              class="glyphicon glyphicon-trash"></span></a></td>
+              class="glyphicon glyphicon-trash text-danger"></span></a></td>
         </tr>
         </tbody>
       </table>

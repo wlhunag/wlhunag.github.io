@@ -233,10 +233,13 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                 }
             });
             $scope.login = function () {
+
+                $location.path('/login');
             };
 
             $scope.logout = function () {
                 Auth.$unauth();
+                $(".navbar-toggle").click(); //bootstrap 3.x by Richard;
             };
 
         }])
