@@ -16,9 +16,9 @@
       <h4 class="btn btn-lg btn-info">{{ entry.title }}
       </h4>
       <img ng-src="{{entry.img}}" style="max-height: 80px;max-width: 80px;"/>
-     <span class="pull-right"> <strong>&nbsp;張貼者</strong>&nbsp;&nbsp;
-      <img ng-src="{{ entry.posterPicture}}" style="max-height:50px;max-width: 50px">&nbsp;{{ entry.poster}}
-      <span>&nbsp;&nbsp; {{entry.edittime || entry.time | date:'yyyy-MM-dd HH:mm'}}</span></span>
+     <span class="pull-right">
+      <img ng-src="{{ entry.posterPicture}}" style="max-height:50px;max-width: 50px;float: left;">張貼者&nbsp;{{ entry.poster}}
+      <p class="help-block text-info small" style="font-size: 75%"> {{entry.edittime || entry.time | date:'yyyy-MM-dd HH:mm'}}</p></span>
     </div>
     <div class="col-xs-12 col-md-12 col-lg-12 jumbotron"><p id="setimg" ng-bind-html="entry.explanation | to_trusted"></p></div>
 
