@@ -114,7 +114,7 @@ var translations = {
         "介紹：": "Introduction:",
         "興趣:": "Habits:",
         "我的網站：": "My website:",
-        "找工作": "find a job",
+        "找工作": "Find a Job",
         "按一下每筆工作可以看到詳細資料。登入後才可以張貼工作": "Click to see the details of each job. Login before you can post jobs",
         "搜尋：": "Search:",
         "只要打入部分關鍵字就會直接跳出結果": "Result will update when you type",
