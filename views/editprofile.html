@@ -1,23 +1,23 @@
 <script src="scripts/ckeditor/ckeditor.js"></script>
 <script> CKEDITOR.env.isCompatible = true;</script>
-<view-title>編輯自我介紹</view-title>
+<view-title>{{'編輯自我介紹'|translate}}</view-title>
 <div class="container-fluid">
 
   <div class="row">
     <div class="alert alert-info alert-dismissible" id="success-alert" role="alert">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      填寫自己的才能以後，自己的介紹就會出現在<a href="#/dashboard/business" class="alert-link">「教育」畫面</a>
+      {{'填寫自己的才能以後，自己的介紹就會出現在'|translate}}<a href="#/dashboard/business" class="alert-link">{{'「教育」畫面'|translate}}</a>
     </div>
   <div><a ui-sref=profile ng-click="saveProfile()" ng-disabled="form.$invalid"
-          class="pull-right btn btn-primary btn-outline btn-rounded">檢視檔案</a>
+          class="pull-right btn btn-primary btn-outline btn-rounded">{{'檢視檔案'|translate}}</a>
 
 
   </div>
   <div class="row">
     <div>
-      <h2>自我介紹</h2>
+      <h2>{{'自我介紹'|translate}}</h2>
 
-      <p>介紹你的專長、讓大家更認識你</p>
+      <p>{{'介紹你的專長、讓大家更認識你'|translate}}</p>
 
       <form name="form" novalidate>
         <div class="form-group">
@@ -26,33 +26,33 @@
                  required>
         </div>
         <div class="form-group">
-          <label for="job">工作</label>
+          <label for="job">{{'工作'|translate}}</label>
           <input ng-model="user.job" type="text" class="form-control" id="job" placeholder="Enter your job"
                  required>
 
-          <p class="help-block">For example: '正大聯合會計師事務所 稅務助理'</p>
+          <p class="help-block">For example: "{{'正大聯合會計師事務所 稅務助理'|translate}}"</p>
         </div>
         <div class="form-group">
-          <label for="editor1">自我介紹</label>
+          <label for="editor1">{{'自我介紹'|translate}}</label>
           <textarea name="editor1" id="editor1" ck-editor rows="10" cols="80" ng-model="user.introduction" required>
-          輸入你的自我介紹
+          {{'輸入你的自我介紹'|translate}}
             </textarea>
-          <p class="help-block">可附圖、連結、影片等等，用滑鼠拖曳編輯區右下角的三角形◢可調整大小</p>
+          <p class="help-block">{{'可附圖、連結、影片等等，用滑鼠拖曳編輯區右下角的三角形◢可調整大小'|translate}}</p>
         </div>
 
         <div class="form-group">
-          <label for="description">興趣簡介</label> (用英文逗號隔開)
+          <label for="description">{{'興趣簡介'|translate}}</label> {{'(用英文逗號隔開)'|translate}}
           <input ng-model="user.habits" ng-list type="text" class="form-control" id="description" placeholder="釣魚，跑步">
           <ul><li ng-repeat="habit in user.habits">{{habit }}</li></ul>
         </div>
         <div class="form-group">
-          <label for="want">我想學...</label> (用英文逗號隔開)
-          <input ng-model="user.wants" ng-list type="text" class="form-control" id="want" placeholder="如何代理商品、如何寫手機App">
+          <label for="want">{{'我想學'|translate}}...</label> {{'(用英文逗號隔開)'|translate}}
+          <input ng-model="user.wants" ng-list type="text" class="form-control" id="want" placeholder="{{'如何代理商品、如何寫手機App'|translate}}">
           <ul><li ng-repeat="want in user.wants">{{want }}</li></ul>
         </div>
       </form>
       <div class="form-group">
-        <label for="stories">才能介紹</label><br/>
+        <label for="stories">{{'才能介紹'|translate}}</label><br/>
         <ul class="">
           <li ng-repeat="eachtalent in talents track by $index">
               <span class="tags" editable-text="talents[$index].talent"
@@ -76,18 +76,18 @@
         <div class="container">
           <input type="text" autofocus ng-model="talentnew" id="stories" class="" placeholder="python">
           <select ng-model="rate" ng-options="item.rating for item in ratingModel">
-            <option value="">-- 請選擇 --</option>
+            <option value="">-- {{'請選擇'|translate}} --</option>
           </select>
-          <textarea ng-model="intro" placeholder="描述你提供的才能程度" style="min-height: 100px"
+          <textarea ng-model="intro" placeholder="{{'描述你提供的才能程度'|translate}}" style="min-height: 100px"
                     class="form-control ng-pristine ng-valid"></textarea>
           <button type="button" class="btn btn-success " ng-click="addTalent()"><span
               class="glyphicon glyphicon-plus"></span> Add
           </button>
 
-          <p class="help-block">詳細介紹可以讓大家更認識你</p>
+          <p class="help-block">{{'詳細介紹可以讓大家更認識你'|translate}}</p>
         </div>
         <div class="form-group">
-          <label>我的網站連結</label>
+          <label>{{'我的網站連結'|translate}}</label>
           <ul class="">
             <li ng-repeat="eachurl in urls track by $index">
               <span class="text-info">
@@ -103,7 +103,7 @@
             </li>
           </ul>
           <div class="container">
-            <label for="urlsname" class="btn btn-outline btn-info btn-rounded ">新增網站</label>
+            <label for="urlsname" class="btn btn-outline btn-info btn-rounded ">{{'新增網站'|translate}}</label>
             <input type="text" ng-model="urlname" id="urlsname" placeholder="Facebook">
             <input type="url"  ng-model="url" id="urls" class="" placeholder="https://www.facebook.com">
             <button type="button" class="btn" ng-click="addUrl()"><span

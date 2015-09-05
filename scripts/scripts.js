@@ -1,7 +1,7 @@
 "use strict";
-angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xeditable", "ui.bootstrap", "viewhead"])
+angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xeditable", "ui.bootstrap", "viewhead", "pascalprecht.translate"])
 
-    .config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
+    .config(["$stateProvider", "$urlRouterProvider", "$translateProvider", "$sceProvider", function ($stateProvider, $urlRouterProvider, $translateProvider, $sceProvider) {
         $urlRouterProvider.when("/dashboard", "/dashboard/job"),
             $urlRouterProvider.otherwise("/dashboard/job"),
             $stateProvider
@@ -104,7 +104,14 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                     parent: "dashboard",
                     templateUrl: "views/dashboard/editbusiness.html",
                     controller: "editBusCtrl"
-                })
+                });
+        $sceProvider.enabled(false);
+        //$translateProvider.useSanitizeValueStrategy('sanitize');
+        $translateProvider.translations('zh-tw', translations['zh-tw']);
+        $translateProvider.translations('en-us', translations['en-us']);
+        $translateProvider.preferredLanguage('en-us');
+        $translateProvider.useSanitizeValueStrategy('escaped');
+
     }])
 
 
@@ -122,7 +129,8 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
         editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
     })
 
-    .controller("LoginCtrl", ["$scope", "$state", "Auth","$location", function ($scope, $state, Auth, $location) {
+    .controller("LoginCtrl", ["$scope", "$state", "Auth","$location", "$translate",
+function ($scope, $state, Auth, $location, $translate) {
         $scope.$state = $state;
 
         // login with Facebook
@@ -158,9 +166,50 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
     }])
 
 
-    .controller("DashboardCtrl", ["$scope", "$rootScope", "$state", "$location", "Auth",
-        function ($scope, $state, $rootScope, $location, Auth) {
+    .controller("DashboardCtrl", ["$scope", "$rootScope", "$state", "$location", "Auth", "$translate",
+        function ($scope, $state, $rootScope, $location, Auth, $translate) {
             $scope.$state = $state;
+            self.language = {
+                title: 'English',
+                type: 'en-us'
+            };
+
+            $scope.changeLanguage = function(lang) {
+                lang = lang.toLowerCase();
+
+                if (lang === 'zh-tw')
+                    lang = {title: '繁體中文',type: 'zh-tw'};
+                else if (lang === 'de-de')
+                    lang = {title: 'Deutsch',type: 'de-de'};
+                else
+                    lang = {title: 'English',type: 'en-us'};
+
+                self.language.title = lang.title;
+                self.language.type = lang.type;
+                console.log(self.language.title);
+
+                $translate.use(lang.type);
+            };
+
+
+            var lang = 'zh-tw';
+            if (window.navigator.language !== undefined)
+                lang = window.navigator.language.toLowerCase();
+            else if (window.navigator.systemLanguage !== undefined)
+                lang = window.navigator.systemLanguage.toLowerCase();
+
+            if (lang === 'zh-tw')
+                lang = {title: '繁體中文',type: 'zh-tw'};
+            else if (lang === 'de-de')
+                lang = {title: 'Deutsch',type: 'de-de'};
+            else
+                lang = {title: 'English',type: 'en-us'};
+
+            self.language.title = lang.title;
+            self.language.type = lang.type;
+
+            $translate.use(lang.type);
+
 
             function getName(authData) {
                 switch (authData.provider) {
@@ -244,8 +293,8 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
 
         }])
 
-    .controller("JobCtrl", ["$scope", "$firebaseArray", "$firebaseObject", "Auth", "$location",
-        function ($scope, $firebaseArray, $firebaseObject, Auth, $location) {
+    .controller("JobCtrl", ["$scope", "$firebaseArray", "$firebaseObject", "Auth", "$location", "$translate",
+        function ($scope, $firebaseArray, $firebaseObject, Auth, $location, $translate) {
             var ref = new Firebase("https://amber-heat-6612.firebaseio.com");
             $scope.jobs = $firebaseArray(ref.child('jobs'));
             $scope.auth = Auth;
@@ -264,11 +313,12 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
                 }
             });
 
+
         }])
 
 
-    .controller("ProfileCtrl", ["$scope", "$state", "$firebaseObject", "$firebaseArray", "$stateParams","$location",
-        function ($scope, $state, $firebaseObject, $firebaseArray, $stateParams,$location) {
+    .controller("ProfileCtrl", ["$scope", "$state", "$firebaseObject", "$firebaseArray", "$stateParams","$location","$translate",
+        function ($scope, $state, $firebaseObject, $firebaseArray, $stateParams,$location, $translate) {
             $scope.$state = $state;
 
             $scope.ratingModel = [
@@ -342,8 +392,8 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             };
         }])
 
-    .controller("ProfileDetailCtrl", ["$scope", "Entry", "$modal", "$stateParams",
-        function ($scope, Entry, $modal, $stateParams) {
+    .controller("ProfileDetailCtrl", ["$scope", "Entry", "$modal", "$stateParams","$translate",
+        function ($scope, Entry, $modal, $stateParams, $translate) {
             console.log( $stateParams.proId);
             var users = Entry.get({id: "users/"+ $stateParams.proId}).$promise;
             users.then(function onSuccess(response) {
@@ -374,8 +424,8 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
         };
     })
 
-    .controller("EduCtrl", ["$scope", "Entry", "$modal",
-        function ($scope, Entry, $modal) {
+    .controller("EduCtrl", ["$scope", "Entry", "$modal","$translate",
+        function ($scope, Entry, $modal, $translate) {
             var users = Entry.get({id: "users"}).$promise;
             users.then(function onSuccess(response) {
                 $scope.users = response.toJSON();
@@ -408,7 +458,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
 
         }])
 
-    .controller('ModalInstanceCtrl', function ($scope, $modalInstance, user) {
+    .controller('ModalInstanceCtrl', function ($scope, $modalInstance, user, $translate) {
 
         $scope.user = user;
         $scope.ok = function () {
@@ -416,8 +466,8 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
         };
     })
 
-    .controller("JobDetailCtrl", ["$scope", "$stateParams", "$firebaseObject", "$firebaseArray","Auth",
-        function ($scope, $stateParams, $firebaseObject,$firebaseArray, Auth) {
+    .controller("JobDetailCtrl", ["$scope", "$stateParams", "$firebaseObject", "$firebaseArray","Auth","$translate",
+        function ($scope, $stateParams, $firebaseObject,$firebaseArray, Auth, $translate) {
             console.log( $stateParams.jobId);
             var ref = new Firebase("https://amber-heat-6612.firebaseio.com/jobs");
             var nref = ref.child( $stateParams.jobId);
@@ -514,8 +564,8 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             }
         }])
 
-    .controller("editJobDetailCtrl", ["$scope", "$stateParams", "$firebaseObject", "$location",
-        function ($scope, $stateParams, $firebaseObject,$location) {
+    .controller("editJobDetailCtrl", ["$scope", "$stateParams", "$firebaseObject", "$location","$translate",
+        function ($scope, $stateParams, $firebaseObject,$location, $translate) {
             console.log( $stateParams.jobId);
             var ref = new Firebase("https://amber-heat-6612.firebaseio.com/jobs");
             var nref = ref.child( $stateParams.jobId);
@@ -545,7 +595,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             };
         }])
 
-    .controller("newJobCtrl", ["$scope", "$firebaseArray", "$location", "Auth","$http", function ($scope, $firebaseArray, $location,Auth, $http) {
+    .controller("newJobCtrl", ["$scope", "$firebaseArray", "$location", "Auth","$http","$translate", function ($scope, $firebaseArray, $location,Auth, $http, $translate) {
         var ref = new Firebase("https://amber-heat-6612.firebaseio.com/jobs");
         $scope.jobtypes = jobtypes;
         //$scope.needfix = false;
@@ -622,7 +672,7 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
 
 
 
-    .controller('newBusCtrl', ["$scope", "$firebaseArray", "$location", "Auth","$http", function ($scope, $firebaseArray, $location,Auth, $http) {
+    .controller('newBusCtrl', ["$scope", "$firebaseArray", "$location", "Auth","$http", "$translate", function ($scope, $firebaseArray, $location,Auth, $http, $translate) {
         var ref = new Firebase("https://amber-heat-6612.firebaseio.com/businesses");
         $scope.bus = $firebaseArray(ref);
         $scope.newbus= new Object;
@@ -682,8 +732,8 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
 
     }])
 
-    .controller('BusCtrl', ["$scope", "$firebaseArray", "$firebaseObject", "$location", "Auth",
-        function ($scope, $firebaseArray,$firebaseObject, $location,Auth) {
+    .controller('BusCtrl', ["$scope", "$firebaseArray", "$firebaseObject", "$location", "Auth","$translate",
+        function ($scope, $firebaseArray,$firebaseObject, $location,Auth, $translate) {
         var ref = new Firebase("https://amber-heat-6612.firebaseio.com/businesses");
         $scope.buses = $firebaseArray(ref);
 
@@ -705,8 +755,8 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
 
     }])
 
-    .controller("BusDetailCtrl", ["$scope", "$stateParams", "$firebaseObject", "$firebaseArray","Auth",
-        function ($scope, $stateParams, $firebaseObject,$firebaseArray,Auth) {
+    .controller("BusDetailCtrl", ["$scope", "$stateParams", "$firebaseObject", "$firebaseArray","Auth","$translate",
+        function ($scope, $stateParams, $firebaseObject,$firebaseArray,Auth, $translate) {
             console.log( $stateParams.busId);
             var ref = new Firebase("https://amber-heat-6612.firebaseio.com/businesses");
             var nref = ref.child( $stateParams.busId);
@@ -808,8 +858,8 @@ angular.module("yapp", ["firebase", "ui.router", "ngAnimate", "ngResource", "xed
             }
         }])
 
-    .controller("editBusCtrl", ["$scope", "$stateParams", "$firebaseObject", "$location",
-        function ($scope, $stateParams, $firebaseObject,$location) {
+    .controller("editBusCtrl", ["$scope", "$stateParams", "$firebaseObject", "$location","$translate",
+        function ($scope, $stateParams, $firebaseObject,$location,$translate) {
             console.log( $stateParams.busId);
             var ref = new Firebase("https://amber-heat-6612.firebaseio.com/businesses");
             var nref = ref.child( $stateParams.busId);

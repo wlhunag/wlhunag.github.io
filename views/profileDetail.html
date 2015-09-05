@@ -1,23 +1,23 @@
-<view-title>{{ user.name}}的個人檔案</view-title>
-<div><a ui-sref=education class="pull-right btn btn-primary btn-outline btn-rounded">返回才能</a>
+<view-title>{{ user.name}}{{'的個人檔案'|translate}}</view-title>
+<div><a ui-sref=education class="pull-right btn btn-primary btn-outline btn-rounded">{{'返回才能'|translate}}</a>
 
   <div class="row">
-    <h2>個人檔案</h2>
+    <h2>{{'個人檔案'|translate}}</h2>
 
     <div class='container'><h1 class="text-center">{{ user.name}}</h1>
 
-      <p><span class="btn btn-success"><i class="fa fa-briefcase pull-left"></i>&nbsp;職業</span>
+      <p><span class="btn btn-success"><i class="fa fa-briefcase pull-left"></i>&nbsp;{{'職業'|translate}}</span>
        {{ user.job}}</p>
 
-      <p><span class="btn btn-success"><i class="fa fa-user"></i>&nbsp;自我介紹</span>
+      <p><span class="btn btn-success"><i class="fa fa-user"></i>&nbsp;{{'自我介紹'|translate}}</span>
 
       <div class="jumbotron"  ng-bind-html="user.introduction | to_trusted"></div>
       </p>
 
-      <p><span class="btn btn-success"><i class="fa fa-heart"></i> &nbsp;興趣</span><span class="btn-group linktag" ng-repeat="habit in user.habits"><button class="btn btn-default">{{habit}}</button></span></p>
-      <p><span class="btn btn-success"><i class="fa fa-paint-brush"></i> &nbsp;我想學</span><span class="btn-group linktag" ng-repeat="want in user.wants"><button class="btn btn-default">{{want}}</button></span> </p>
+      <p><span class="btn btn-success"><i class="fa fa-heart"></i> &nbsp;{{'興趣'|translate}}</span><span class="btn-group linktag" ng-repeat="habit in user.habits"><button class="btn btn-default">{{habit}}</button></span></p>
+      <p><span class="btn btn-success"><i class="fa fa-paint-brush"></i> &nbsp;{{'我想學'|translate}}</span><span class="btn-group linktag" ng-repeat="want in user.wants"><button class="btn btn-default">{{want}}</button></span> </p>
 
-      <p><span class="btn btn-success"><i class="glyphicon glyphicon-thumbs-up"></i> &nbsp;才能</span></p>
+      <p><span class="btn btn-success"><i class="glyphicon glyphicon-thumbs-up"></i> &nbsp;{{'才能'|translate}}</span></p>
       <div class="jumbotron">
       <p ng-repeat="talentitem in user.talents"><span
           class="tags">{{ talentitem.talent}}</span> <span
@@ -27,7 +27,7 @@
       </div>
       <p></p></p>
 
-      <span class="btn btn-success"><i class="glyphicon glyphicon-globe"></i> &nbsp;我的網站</span>
+      <span class="btn btn-success"><i class="glyphicon glyphicon-globe"></i> &nbsp;{{'我的網站'|translate}}</span>
       <span class="btn-group linktag" ng-repeat="url in user.urls">
         <a class="btn btn-info" ng-href="{{url.url}}" target="_blank">{{url.name}}</a></span>
     </div>
@@ -36,5 +36,5 @@
 </div>
 <hr/>
 <footer>
-  <button  ui-sref=education  class="btn btn-primary btn-outline  btn-rounded btn-block">返回才能</button>
+  <button  ui-sref=education  class="btn btn-primary btn-outline  btn-rounded btn-block">{{'返回才能'|translate}}</button>
 </footer>

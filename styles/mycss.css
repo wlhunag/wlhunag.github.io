@@ -53,11 +53,9 @@ span.tags
 }
 .dropdown-menu
 {
-    background-color: #34495e;
+    background-color: #3CA2E0;
     box-shadow: none;
     -webkit-box-shadow: none;
-    width: 250px;
-    margin-left: -125px;
     left: 50%;
 }
 .dropdown-menu .divider

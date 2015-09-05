@@ -2,8 +2,8 @@
   <div class=row clearfix>
     <div class="col-md-2 col-sm-3 sidebar">
       <div class=text-center>
-        <h2> 工作教育網
-          <small><br/>自立支援</small>
+        <h2> {{"工作教育網"|translate}}
+          <small><br/>{{'自立支援'|translate}}</small>
         </h2>
         <!--以下是側欄-->
 
@@ -14,23 +14,42 @@
 
         <!--<br> <a ui-sref=login class="btn btn-white btn-outline btn-rounded btn-sm">Logout</a>-->
         <br>
-      <div ng-show="!authData.uid" class="text-danger">訪客模式功能受限</div>
+      <div ng-show="!authData.uid" class="text-danger">{{'訪客模式功能受限'|translate}}</div>
         <a ng-if="authData.uid" ng-click="logout()"
-                class="btn btn-white btn-outline btn-rounded">登出</a>
+                class="btn btn-white btn-outline btn-rounded">{{'登出'|translate}}</a>
         <a ng-if="!authData.uid" ng-click="login()" ui-sref=login
-           class="btn btn-white btn-outline btn-rounded">登入</a>
+           class="btn btn-white btn-outline btn-rounded">{{'登入'|translate}}</a>
 
       </div>
       <ul class="nav nav-sidebar">
-        <li ng-class="{active: $state.includes('job')}"><a ui-sref=job>工作 <span class="glyphicon glyphicon-briefcase pull-right"></span><span
+
+        <li ng-class="{active: $state.includes('job')}"><a ui-sref=job>{{'工作'|translate}} <span class="glyphicon glyphicon-briefcase pull-right"></span><span
             class=sr-only>(current)</span></a></li>
 
-        <li ng-class="{active: $state.includes('education')}"><a ui-sref=education>教育<i class="fa fa-graduation-cap pull-right"></i></a></li>
-        <li ng-class="{active: $state.includes('business')}"><a ui-sref=business>創業<i class="fa fa-comments pull-right"></i></a></li>
+        <li ng-class="{active: $state.includes('education')}"><a ui-sref=education>{{'教育'|translate}}<i class="fa fa-graduation-cap pull-right"></i></a></li>
+        <li ng-class="{active: $state.includes('business')}"><a ui-sref=business>{{'創業'|translate}}<i class="fa fa-comments pull-right"></i></a></li>
         <hr/>
         <!--<li><a href=https://www.facebook.com/groups/291785364347235 target="_blank">自立支援社團<i class="pull-right fa fa-facebook-official"></i></a></li>-->
-        <li ng-class="{active: $state.includes('profile')}" style="padding-top: 20px;"><a ui-sref=profile>個人檔案<span class="glyphicon glyphicon-user pull-right"></span></a></li>
-        <li class="footer" ><a href="https://github.com/wlhunag/wlhunag.github.io/blob/master/README.md" target="_blank">關於本網站<i class="fa fa-cog fa-spin pull-right"></i></a></li>
+        <li ng-class="{active: $state.includes('profile')}" style="padding-top: 20px;"><a ui-sref=profile>{{'個人檔案'|translate}}<span class="glyphicon glyphicon-user pull-right"></span></a></li>
+        <li class="footer" ><a href="https://github.com/wlhunag/wlhunag.github.io/blob/master/README.md" target="_blank">{{ "關於本網站"|translate}}<i class="fa fa-cog fa-spin pull-right"></i></a>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">
+            <span translate="更改語言"></span>
+
+            <i class="fa fa-fw fa-globe pull-right"><span class="caret"></span></i>
+
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a ng-click="changeLanguage('en-us')">English</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a ng-click="changeLanguage('zh-tw')">繁體中文</a>
+            </li>
+          </ul>
+        </li>
+
       </ul>
 
     </div>
@@ -41,6 +60,9 @@
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="nav navbar-header">
+
+
+
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                   data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
@@ -48,28 +70,47 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+            <li class="dropdown pull-right">
+            <span class="dropdown-toggle" data-toggle="dropdown">
+
+              <h2><i class="button fa fa-fw fa-globe pull-right"></i></h2>
+
+            </span>
+              <ul class="dropdown-menu">
+                <li class="dropdown">
+                  <a ng-click="changeLanguage('en-us')">English</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a ng-click="changeLanguage('zh-tw')">繁體中文</a>
+                </li>
+              </ul>
+            </li>
+
           <a class="navbar-brand btn  btn-outline" ui-sref=job><span
               class="glyphicon glyphicon-home"></span>
-            工作教育網</a>
+            {{'工作教育網'|translate}}</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li ng-class="{active: $state.includes('job')}"><a ui-sref=job>工作 <span class="glyphicon glyphicon-lock pull-right"></span><span
+            <li ng-class="{active: $state.includes('job')}"><a ui-sref=job>{{'工作'|translate}} <span class="glyphicon glyphicon-lock pull-right"></span><span
                 class=sr-only>(current)</span></a></li>
-            <li ng-class="{active: $state.includes('education')}"><a ui-sref=education>教育 <i class="fa fa-university pull-right"></i></a>
+            <li ng-class="{active: $state.includes('education')}"><a ui-sref=education>{{'教育'|translate}} <i class="fa fa-university pull-right"></i></a>
             </li>
-            <li ng-class="{active: $state.includes('business')}"><a ui-sref=business><i class="fa fa-comments pull-right"></i>創業</a></li>
+            <li ng-class="{active: $state.includes('business')}"><a ui-sref=business><i class="fa fa-comments pull-right"></i>{{'創業'|translate}}</a></li>
             <li class="divider"></li>
+
             <!--<li><a href=https://www.facebook.com/groups/291785364347235 target="_blank"><i class="pull-right fa fa-facebook-official"></i>-->
               <!--自立支援社團</a></li>-->
-            <li><a ui-sref=profile class="text-right"><span class="glyphicon glyphicon-user pull-right"></span>個人檔案&nbsp;&nbsp;</a></li>
-            <li class="footer"><a class="text-right" href="https://github.com/wlhunag/wlhunag.github.io/blob/master/README.md" target="_blank">關於本網站&nbsp;&nbsp;<i class="fa fa-cog fa-spin pull-right"></i></a></li>
+            <li><a ui-sref=profile class="text-right"><span class="glyphicon glyphicon-user pull-right"></span>{{'個人檔案'|translate}}&nbsp;&nbsp;</a></li>
+            <li class="footer"><a class="text-right" href="https://github.com/wlhunag/wlhunag.github.io/blob/master/README.md" target="_blank">{{'關於本網站'|translate}}&nbsp;&nbsp;<i class="fa fa-cog fa-spin pull-right"></i></a></li>
+
             <li class="divider"></li>
             <!--<li><a ng-click="logout()" ui-sref=login class="btn btn-white btn-outline btn-rounded btn-lg">登出</a></li>-->
-            <li><a ng-if="authData.uid" ng-click="logout()" class="btn btn-white btn-outline btn-rounded">登出</a></li>
-            <li><a ng-if="!authData.uid" ng-click="login()" ui-sref=login class="btn btn-white btn-outline btn-rounded">登入</a></li>          </ul>
+            <li><a ng-if="authData.uid" ng-click="logout()" class="btn btn-white btn-outline btn-rounded">{{'登出'|translate}}</a></li>
+            <li><a ng-if="!authData.uid" ng-click="login()" ui-sref=login class="btn btn-white btn-outline btn-rounded">{{'登入'|translate}}</a></li>          </ul>
         </div>
         <!-- /.navbar-collapse -->
       </div>
@@ -84,7 +125,7 @@
           e.stopPropagation();
         });
       });
-      $('.nav a').on('click', function () {
+      $('#bs-example-navbar-collapse-1  a').on('click', function () {
         $(".navbar-toggle").click() //bootstrap 3.x by Richard
       });
 

@@ -1,22 +1,22 @@
-<view-title>找工作</view-title>
+<view-title>{{'找工作'|translate}}</view-title>
   <div class="row">
     <div class="alert alert-info alert-dismissible" id="success-alert" role="alert">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <strong>使用說明：</strong> 按一下每筆工作可以看到詳細資料。登入後才可以張貼工作
+      <strong>{{'使用說明：'|translate}}</strong> {{'按一下每筆工作可以看到詳細資料。登入後才可以張貼工作'|translate}}
     </div>
     <div class="alert alert-success alert-dismissible" id="success-2" role="alert">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <strong>搜尋：</strong> 只要打入部分關鍵字就會直接跳出結果
+      <strong>{{'搜尋：'|translate}}</strong> {{'只要打入部分關鍵字就會直接跳出結果'|translate}}
     </div>
     <div class="col-sm-12">
-      <a ui-sref=newjob class="pull-right btn btn-primary btn-outline btn-rounded">張貼工作</a>
+      <a ui-sref=newjob class="pull-right btn btn-primary btn-outline btn-rounded"><span translate="張貼工作" remark="張貼工作"></span></a>
 
     <h2 style="padding-left: 18px"><span class="glyphicon glyphicon-briefcase pull-left"></span>
-      &nbsp;&nbsp;找工作?</h2>
+      &nbsp;&nbsp;{{'找工作?'|translate}}</h2>
 
     <div id="custom-search-input">
       <div class="input-group col-md-12">
-        <input type="text" class="form-control input-lg" placeholder="即時查詢" ng-model="query"/>
+        <input type="text" class="form-control input-lg" placeholder="{{'即時查詢'|translate}}" ng-model="query"/>
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-lg" type="button">
                           <i class="glyphicon glyphicon-search"></i>
@@ -28,14 +28,14 @@
       <table class="table table-striped table-hover">
         <thead>
         <tr>
-          <th>職缺</th>
-          <th>地點</th>
-          <th class="hidden-xs">工作內容</th>
-          <th class="hidden-xs">條件要求</th>
-          <th>公司名稱</th>
-          <th>月薪範圍</th>
+          <th>{{'職缺'|translate}}</th>
+          <th>{{'地點'|translate}}</th>
+          <th class="hidden-xs">{{'工作內容'|translate}}</th>
+          <th class="hidden-xs">{{'條件要求'|translate}}</th>
+          <th>{{'公司名稱'|translate}}</th>
+          <th>{{'月薪範圍'|translate}}</th>
           <!--<th>詳</th>-->
-          <th ng-show="user.isAdmin" class="warning">刪除</th>
+          <th ng-show="user.isAdmin" class="warning">{{'刪除'|translate}}</th>
         </tr>
         </thead>
         <tbody>

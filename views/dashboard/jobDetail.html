@@ -1,14 +1,14 @@
-<view-title>{{entry.title}}職缺</view-title>
-<div class="container-fluid"><h3>檢視職缺</h3><a ui-sref=job class="pull-right btn btn-primary btn-outline btn-rounded">Back
+<view-title>{{entry.title}}</view-title>
+<div class="container-fluid"><h3>{{'檢視職缺'|translate}}</h3><a ui-sref=job class="pull-right btn btn-primary btn-outline btn-rounded">Back
   to job</a>
 {{entry.idPoster |json}}
   <div ng-if="!!isPoster" ui-sref="editjobDetail({jobId: jobId})" type="button"
        class="btn btn-rounded btn-outline btn-warning pull-right">
-    <i class="glyphicon glyphicon-edit green"></i>編輯
+    <i class="glyphicon glyphicon-edit green"></i>{{'編輯'|translate}}
   </div>
   <div ng-if="!!isPoster" ng-click="removeJob(jobId)" ui-sref="job" type="button"
        class="btn btn-rounded btn-outline btn-danger pull-right"  style="margin-right: 30px">
-    <i class="glyphicon glyphicon-trash"></i>刪除
+    <i class="glyphicon glyphicon-trash"></i>{{'刪除'|translate}}
   </div>
   <form id="new-job" name="entryform" novalidate="" ng-class="{'needfix':needfix}"
         class="ng-pristine ng-invalid ng-invalid-required">
@@ -17,26 +17,26 @@
     <hr>
     <div class="row">
       <div class="col-xs-3">
-        <h4>職缺</h4>
+        <h4>{{'職缺'|translate}}</h4>
       </div>
       <div class="col-xs-9"><h4 class="text-success">{{ entry.title }}</h4></div>
 
     </div>
     <div class="row">
       <div class="col-xs-3">
-        <h4>職業別</h4>
+        <h4>{{'職業別'|translate}}</h4>
       </div>
       <div class="col-xs-9"><h4>{{ entry.jobtype.name }}</h4></div>
     </div>
     <div class="row">
       <div class="col-xs-3">
-        <h4>職業名</h4>
+        <h4>{{'職業名'|translate}}</h4>
       </div>
       <div class="col-xs-9"><h4>{{ entry.jobname.name }}</h4></div>
     </div>
     <div class="row taller">
       <div class="col-xs-3">
-        <h4>月薪範圍</h4>
+        <h4>{{'月薪範圍'|translate}}</h4>
       </div>
       <div class="col-xs-9">
         <h4 ng-show="entry.salary1" class="text-info">{{entry.salary1 | currency:limit:0}} ~ {{entry.salary2 |
@@ -45,29 +45,29 @@
     </div>
     <div class="row taller">
       <div class="col-xs-3">
-        <h4>額外獎金</h4>
+        <h4>{{'額外獎金'|translate}}</h4>
       </div>
       <div class="col-xs-9">
         <input ng-disabled="true" type="checkbox" name="signbonus" ng-model="entry.signbonus"
-               class="ng-pristine ng-valid"><i class="glyphicon glyphicon-usd blue"></i> 簽約金<br/>
+               class="ng-pristine ng-valid"><i class="glyphicon glyphicon-usd blue"></i> {{'簽約金'|translate}}<br/>
         <input ng-disabled="true" type="checkbox" name="techshare" ng-model="entry.techshare"
-               class="ng-pristine ng-valid"><i class="glyphicon glyphicon-folder-close orange"></i> 技術股<br/>
+               class="ng-pristine ng-valid"><i class="glyphicon glyphicon-folder-close orange"></i> {{'技術股'|translate}}<br/>
         <input ng-disabled="true" type="checkbox" name="stockright" ng-model="entry.stockright"
-               class="ng-pristine ng-valid"><i class="glyphicon glyphicon-heart red"></i> 員工認股<br/>
+               class="ng-pristine ng-valid"><i class="glyphicon glyphicon-heart red"></i> {{'員工認股'|translate}}<br/>
         <input ng-disabled="true" type="checkbox" name="annualbonus" ng-model="entry.annualbonus"
-               class="ng-pristine ng-valid"><i class="glyphicon glyphicon-gift green"></i> 三個月以上年終獎金<br/>
+               class="ng-pristine ng-valid"><i class="glyphicon glyphicon-gift green"></i> {{'三個月以上年終獎金'|translate}}<br/>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-3">
-        <h4>工作地點</h4>
+        <h4>{{'工作地點'|translate}}</h4>
       </div>
       <div class="col-xs-9 text-info">{{ entry.location}}</div>
     </div>
     <hr/>
     <div class="row">
       <div class="col-xs-3">
-        <h4>工作內容</h4>
+        <h4>{{'工作內容'|translate}}</h4>
       </div>
       <!--<div class="col-xs-9"><p ng-bind-html="entry.desc | nl2br"></p></div>-->
       <div class="col-xs-9"><p ng-bind-html="entry.desc | to_trusted"></p></div>
@@ -76,7 +76,7 @@
     <hr/>
     <div class="row">
       <div class="col-xs-3">
-        <h4>條件要求</h4>
+        <h4>{{'條件要求'|translate}}</h4>
       </div>
       <div class="col-xs-9">
         <!--<p ng-bind-html="entry.requirement | nl2br"></p>-->
@@ -86,13 +86,13 @@
     <hr>
     <div class="row">
       <div class="col-xs-3">
-        <h4>公司名稱</h4>
+        <h4>{{'公司名稱'|translate}}</h4>
       </div>
       <div class="col-xs-9"><h4>{{ entry.company}}</h4></div>
     </div>
     <div class="row">
       <div class="col-xs-3">
-        <h4>公司介紹</h4>
+        <h4>{{'公司介紹'|translate}}</h4>
       </div>
       <div class="col-xs-9"><p ng-bind-html="entry.compdesc | to_trusted"></p></div>
     </div>
@@ -100,26 +100,26 @@
 
     <div class="row">
       <div class="col-xs-3">
-        <h4>公司網址</h4>
+        <h4>{{'公司網址'|translate}}</h4>
       </div>
       <div class="col-xs-9"><a ng-href="{{ entry.url}}" target="_blank">{{ entry.url}}</a></div>
     </div>
     <div class="row">
       <div class="col-xs-3">
-        <h4>聯絡人</h4>
+        <h4>{{'聯絡人'|translate}}</h4>
       </div>
       <div class="col-xs-9">{{ entry.contact}}</div>
     </div>
     <div class="row">
       <div class="col-xs-3">
-        <h4>電子郵件</h4>
+        <h4>{{'電子郵件'|translate}}</h4>
       </div>
       <div class="col-xs-9"><a ng-href="mailto:{{ entry.email}}" target="_blank">{{ entry.email}}</a></div>
     </div>
 
     <div class="row">
       <div class="col-xs-3">
-        <h4>職缺張貼者</h4>
+        <h4>{{'職缺張貼者'|translate}}</h4>
       </div>
       <div class="col-xs-9 pull-right">
         <img ng-src="{{ entry.posterPicture}}"
@@ -145,7 +145,7 @@
       <img class="pic pull-left" ng-src="{{ comments.posterPicture}}"
            style="max-height:70px;max-width: 60px; padding-right: 8px">
       <input style="width:80%;height: 50px;" ng-model="newcomment" ng-keydown="addComments($event)" type="text"
-             id="messageInput" row="3" placeholder="留言...">
+             id="messageInput" row="3" placeholder="{{'留言'|translate}}...">
     </div>
   </div>
 </div>

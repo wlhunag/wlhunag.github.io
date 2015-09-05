@@ -1,16 +1,16 @@
-<view-title>教育</view-title>
+<view-title>{{'教育'|translate}}</view-title>
 <div class="alert alert-info alert-dismissible" id="success-alert" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>使用說明：</strong> 此處資料由大家填寫的個人檔案而來，按一下「詳細」可看到詳細資料。登入後才可以編輯個人檔案
+  <strong>{{'使用說明：'|translate}}</strong> {{'此處資料由大家填寫的個人檔案而來，按一下「詳細」可看到詳細資料。登入後才可以編輯個人檔案'|translate}}
 </div>
-<div><a ui-sref=editprofile class="pull-right btn btn-primary btn-outline btn-rounded">編輯個人檔案</a>
+<div><a ui-sref=editprofile class="pull-right btn btn-primary btn-outline btn-rounded">{{'編輯個人檔案'|translate}}</a>
 
   <h2><i class="fa fa-graduation-cap  ">&nbsp;</i>
-    找才能</h2>
+    {{'找才能'|translate}}</h2>
 
   <div id="custom-search-input">
     <div class="input-group col-md-12">
-      <input type="text" class="form-control input-lg" placeholder="鋼琴" ng-model="talentquery"/>
+      <input type="text" class="form-control input-lg" placeholder="{{'鋼琴'|translate}}" ng-model="talentquery"/>
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-lg" type="button">
                           <i class="glyphicon glyphicon-search"></i>
@@ -26,10 +26,10 @@
           <div class="animate-edu" ng-if="user.talents" ng-repeat="user in users |toArray | filter: talentquery">
             <div ng-animate="'animate'" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 well profile">
               <h2 class="hidden-xs">{{ user.name }}<a class="pull-right btn  btn-info  topright" ng-click="open(user)">
-                <span>詳細</span></a></h2>
+                <span>{{'詳細'|translate}}</span></a></h2>
               <h2 class="visible-xs">{{ user.name }}
                 <a class="pull-right btn  btn-info  topright" ui-sref="profileDetail({proId: user.authdata.uid})">
-                <span>詳細</span></a></h2>
+                <span>{{'詳細'|translate}}</span></a></h2>
 
               <figure>
                 <a ng-href="{{ user.authdata.facebook.cachedUserProfile.link ||user.authdata.google.cachedUserProfile.link}}"
@@ -37,26 +37,26 @@
                   <img ng-src="{{user.authdata.picture}}"
                        class="img-thumbnail img-responsive"></a>
               </figure>
-              <p><strong class="text-primary">關於我: </strong>{{ user.job }} </p>
+              <p><strong class="text-primary">{{'關於我: '|translate}}</strong>{{ user.job }} </p>
 
               <p ng-show="detailview" class="btn-block  btn-outline "
-                 style="background-color: #E8FFE2;text-align: left"><strong class="text-primary">介紹：</strong>
+                 style="background-color: #E8FFE2;text-align: left"><strong class="text-primary">{{'介紹：'|translate}}</strong>
                 <span class="jumbotron" ng-bind-html="user.introduction | to_trusted"> </span>
               </p>
 
-              <p><strong class="text-primary">興趣: </strong>
+              <p><strong class="text-primary">{{'興趣:'|translate}} </strong>
                 <span class="btn-group linktag" ng-repeat="habit in user.habits"><button class="btn btn-default disabled">
                   {{habit}}
                 </button></span>
               </p>
 
-              <p ng-show="user.wants"><strong class="text-primary">我想學: </strong>
+              <p ng-show="user.wants"><strong class="text-primary">{{'我想學'|translate}}: </strong>
                 <span class="btn-group linktag" ng-repeat="want in user.wants"><button class="btn btn-default disabled">
                   {{want}}
                 </button></span>
               </p>
 
-              <p><strong class="text-primary">才能: </strong>
+              <p><strong class="text-primary">{{'才能'|translate}}: </strong>
 
               <div class="animate-edu" ng-repeat="talentitem in user.talents" class="btn-block  btn-outline "
                    style="background-color: #E8FFE2;text-align: left"><span
@@ -65,7 +65,7 @@
                                                                      ng-bind-html="talentitem.intro | nl2br"> </span>
               </div>
               </p>
-              <div ng-show="detailview" ng-if="user.urls"><strong class="text-primary">我的網站：</strong>
+              <div ng-show="detailview" ng-if="user.urls"><strong class="text-primary">{{'我的網站：'|translate}}</strong>
                 <a type="button" class="btn btn-success" ng-href="{{url.url}}" target="_blank"
                    ng-repeat="url in user.urls">
                   {{url.name}}</a>

@@ -4099,8 +4099,8 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: #eee;
-    border-color: #3ca2e0
+    background-color: #3CA2E0;
+    /*border-color: #3ca2e0*/
 }
 
 .nav .nav-divider {

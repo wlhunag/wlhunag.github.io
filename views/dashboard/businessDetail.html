@@ -1,14 +1,14 @@
-<view-title>{{ entry.title }}專案</view-title>
-<div class="container-fluid"><h3>檢視專案</h3><a ui-sref=business
-                                             class="pull-right btn btn-primary btn-outline btn-rounded">返回創業</a>
+<view-title>{{ entry.title }}</view-title>
+<div class="container-fluid"><h3>{{'檢視專案'|translate}}</h3><a ui-sref=business
+                                             class="pull-right btn btn-primary btn-outline btn-rounded">{{'返回創業'|translate}}</a>
 
   <div ng-show="isPoster" ui-sref="editbusiness({busId: busId})" type="button"
        class="btn btn-rounded btn-outline btn-warning pull-right">
-    <i class="glyphicon glyphicon-edit green"></i>編輯
+    <i class="glyphicon glyphicon-edit green"></i>{{'編輯'|translate}}
   </div>
   <div ng-show="isPoster" ng-click="removeBus(busId)" ui-sref="business" type="button"
        class="btn btn-rounded btn-outline btn-danger pull-right" style="margin-right: 30px">
-    <i class="glyphicon glyphicon-trash"></i>刪除
+    <i class="glyphicon glyphicon-trash"></i>{{'刪除'|translate}}
   </div>
   <div class="col-lg-6 col-lg-offset-6 col-xs-8 col-xs-offset-4">   </div>
   <form name="myForm" novalidate>
@@ -17,7 +17,7 @@
       </h4>
       <img ng-src="{{entry.img}}" style="max-height: 80px;max-width: 80px;"/>
      <span class="pull-right">
-      <img ng-src="{{ entry.posterPicture}}" style="max-height:50px;max-width: 50px;float: left;">張貼者&nbsp;{{ entry.poster}}
+      <img ng-src="{{ entry.posterPicture}}" style="max-height:50px;max-width: 50px;float: left;">{{'張貼者'|translate}}&nbsp;{{ entry.poster}}
       <p class="help-block text-info small" style="font-size: 75%"> {{entry.edittime || entry.time | date:'yyyy-MM-dd HH:mm'}}</p></span>
     </div>
     <div class="col-xs-12 col-md-12 col-lg-12 jumbotron"><p id="setimg" ng-bind-html="entry.explanation | to_trusted"></p></div>
@@ -44,7 +44,7 @@
       <img class="pic pull-left" ng-src="{{ comments.posterPicture}}"
            style="max-height:70px;max-width: 60px; padding-right: 8px">
       <input style="width:80%;height: 50px;" ng-model="comment" ng-keydown="addComments($event)" type="text"
-             id="messageInput" row="3" placeholder="留言...">
+             id="messageInput" row="3" placeholder="{{'留言'|translate}}...">
     </div>
   </div></div>
 </div>
